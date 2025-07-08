@@ -2,9 +2,9 @@ import YellowButton from "./YellowButton";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center">
+    <section className="relative min-h-screen flex items-end">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 w-[100vw] h-[100vh]">
+      <div className="absolute inset-0 w-full h-[100vh]">
         {/* Background Image */}
         <div 
           className="w-full h-full bg-cover bg-center bg-no-repeat"
@@ -13,18 +13,25 @@ export default function Hero() {
           }}
         />
         
+        {/* Black Gradient Overlay - 70% left to 0% right */}
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            background: 'linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%)'
+          }}
+        />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto !px-[74px] py-20">
+      <div className="relative bottom-[200px] z-10 container mx-auto !px-[74px] py-20">
         <div className="max-w-[760px]">
           {/* Small heading */}
-          <p className="text-[#FF8B8B] text-[24px] !leading-[100%] !tracking-[0%] mb-[10px] font-medium">
+          <p className="text-[#FF8B8B] !text-[24px] !leading-[100%] !tracking-[0%] mb-[10px] font-medium">
             Network for
           </p>
           
           {/* Main heading */}
-          <h1 className="font-serif text-[60px] !leading-[80px] !tracking-[0%] font-bold text-white mb-[20px] leading-tight">
+          <h1 className="font-serif !text-[60px] !leading-[80px] !tracking-[0%] font-bold text-white mb-[20px] leading-tight">
             Nigerian Female<br />
             PHD Holders in<br />
             <span className="uppercase">ARTS & SCIENCES</span>

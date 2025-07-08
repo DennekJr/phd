@@ -25,23 +25,23 @@ export default function Header() {
 
         {/* Navigation Menu (centered) */}
         <div className="flex items-center text-white !space-x-[61px] justify-center w-full">
-          <Link 
-            href="/" 
-            style={{fontWeight: pathname === '/' ? '700' : '400'}} 
+          <Link
+            href="/"
+            style={{ fontWeight: pathname === '/' ? '700' : '400' }}
             className="!text-[#ffffff] !text-[16px] !leading-[100%] !tracking-[10%] hover:text-gray-200 no-underline"
           >
             Home
           </Link>
-          <Link 
-            href="/events" 
-            style={{fontWeight: pathname === '/events' ? '700' : '400'}} 
+          <Link
+            href="/events"
+            style={{ fontWeight: pathname === '/events' ? '700' : '400' }}
             className="!text-[#ffffff] !text-[16px] !leading-[100%] !tracking-[10%] hover:text-gray-200 no-underline"
           >
             Events
           </Link>
-          <Link 
-            href="/our-team" 
-            style={{fontWeight: pathname === '/our-team' ? '700' : '400'}} 
+          <Link
+            href="/our-team"
+            style={{ fontWeight: pathname === '/our-team' ? '700' : '400' }}
             className="!text-[#ffffff] !text-[16px] !leading-[100%] !tracking-[10%] hover:text-gray-200 no-underline"
           >
             Our Team
