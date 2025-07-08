@@ -1,37 +1,59 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import YellowButton from './YellowButton';
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm">
-      <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <header className="absolute w-full top-0 left-0 right-0 z-50">
+      <nav className="w-full !py-[31.5px] !px-[74px] flex items-center justify-between relative">
         {/* Logo */}
-        <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 bg-red-800 rounded-full flex items-center justify-center">
-            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-              <span className="text-red-800 font-bold text-xs">N</span>
-            </div>
-          </div>
-          <span className="text-2xl font-bold text-gray-900">NNFPHAS</span>
+        <div className="flex items-center w-full">
+          <Image
+            src="/images/text-logo.svg"
+            alt="NNFPHAS logo"
+            width={247}
+            height={95}
+            priority
+            className="h-auto w-auto"
+          />
         </div>
 
-        {/* Navigation Menu */}
-        <div className="hidden md:flex items-center space-x-8">
-          <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium">
+        {/* Navigation Menu (centered) */}
+        <div className="flex items-center text-white !space-x-[61px] justify-center w-full">
+          <Link 
+            href="/" 
+            style={{fontWeight: pathname === '/' ? '700' : '400'}} 
+            className="!text-[#ffffff] !text-[16px] !leading-[100%] !tracking-[10%] hover:text-gray-200 no-underline"
+          >
             Home
           </Link>
-          <Link href="/events" className="text-gray-700 hover:text-gray-900 font-medium">
+          <Link 
+            href="/events" 
+            style={{fontWeight: pathname === '/events' ? '700' : '400'}} 
+            className="!text-[#ffffff] !text-[16px] !leading-[100%] !tracking-[10%] hover:text-gray-200 no-underline"
+          >
             Events
           </Link>
-          <Link href="/our-team" className="text-gray-700 hover:text-gray-900 font-medium">
+          <Link 
+            href="/our-team" 
+            style={{fontWeight: pathname === '/our-team' ? '700' : '400'}} 
+            className="!text-[#ffffff] !text-[16px] !leading-[100%] !tracking-[10%] hover:text-gray-200 no-underline"
+          >
             Our Team
           </Link>
         </div>
 
         {/* JOIN US Button */}
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-md transition-colors">
-          JOIN US
-        </button>
+        <div className='flex w-full justify-end'>
+          <YellowButton>
+            JOIN US
+          </YellowButton>
+        </div>
 
         {/* Mobile menu button */}
         <button className="md:hidden flex items-center">
