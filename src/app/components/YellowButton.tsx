@@ -3,7 +3,7 @@ import React from 'react';
 interface YellowButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'tertiary';
   className?: string;
 }
 
@@ -25,6 +25,12 @@ export default function YellowButton({
     },
     secondary: {
       className: "text-gray-700 bg-white hover:bg-gray-50 border border-gray-200",
+      style: {
+        boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)'
+      }
+    },
+    tertiary: {
+      className: "text-[#232427] bg-transparent leading-[16px] font-extrabold border-b-[2px] border-[#232427]",
       style: {
         boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)'
       }

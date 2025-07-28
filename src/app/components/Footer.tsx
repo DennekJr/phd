@@ -32,6 +32,11 @@ export default function Footer() {
                     height={330}
                     className="object-cover w-full h-[330px]"
                 />
+                {/* Color overlay */}
+                <div 
+                    className="absolute inset-0 w-full h-full"
+                    style={{ backgroundColor: '#880C24', opacity: 0.75 }}
+                />
             </div>
 
             <div className="relative w-full z-10 mx-auto !px-[76px]">

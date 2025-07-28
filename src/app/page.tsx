@@ -10,14 +10,12 @@ import Footer from './components/Footer';
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Header />
       <Hero />
       <About />
       <JoinNetwork />
       <WhatWeDo />
       <Graphic />
-      <UpcomingEvents />
-      <Footer />
+      <UpcomingEvents showAllEvents={false} />
     </main>
   );
 }
