@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import YellowButton from './YellowButton';
 
-export default function UpcomingEvents() {
+export default function UpcomingEvents({showAllEvents = false}: {showAllEvents?: boolean}) {
     const events = [
         {
             date: {
@@ -16,7 +16,7 @@ export default function UpcomingEvents() {
         {
             date: {
                 month: 'Sep',
-                day: '5'
+                day: '3'
             },
             time: '7:00 pm',
             title: '"Meet the Mentors" Networking Mixer',
@@ -32,7 +32,28 @@ export default function UpcomingEvents() {
             title: 'Virtual Grant Writing Workshop: Securing International Funding',
             description: 'An online workshop providing practical strategies and insights for Nigerian female academics seeking international research grants.',
             image: '/images/upcoming-events/event-three.jpg'
-        }
+        },
+        {
+            date: {
+                month: 'Sep',
+                day: '30'
+            },
+            time: '7:00 pm',
+            title: 'Online Professional Development Series: Publishing in High-Impact Journals',
+            description: 'A virtual session offering practical advice and strategies for Nigerian female PhD holders aiming to publish their research in reputable international journals.',
+            image: '/images/upcoming-events/event-four.png'
+        },
+        {
+            date: {
+                month: 'Oct',
+                day: '8'
+            },
+            time: '7:00 pm',
+            title: 'Annual NENFPHAS Gala & Scholarship Awards Night',
+            description: 'Description: An elegant evening in Lagos celebrating academic achievements and recognizing our annual scholarship recipients. Features a keynote address and networking opportunities.',
+            image: '/images/upcoming-events/event-three.jpg'
+        },
+        
     ];
 
     return (
@@ -40,7 +61,7 @@ export default function UpcomingEvents() {
             {/* Decorative arrow */}
             <div className="mx-auto relative max-w-[1920px]">
                 {/* Header */}
-                <div className="w-full relative">
+                {!showAllEvents && <div className="w-full relative">
                     <div className="text-center !mb-[182px]">
                         <p className="text-white !text-[24px] font-light mb-4 !leading-[100%] !tracking-[0%]">
                             Discover the exciting events and opportunities we have planned.
@@ -58,11 +79,11 @@ export default function UpcomingEvents() {
                             className="!w-[178px] !h-[191px]"
                         />
                     </div>
-                </div>
+                </div>}
 
                 {/* Events List */}
                 <div className="space-y-12">
-                    {events.map((event, index) => (
+                    {events.slice(0, showAllEvents ? events.length : 3).map((event, index) => (
                         <div key={index} style={{paddingTop: index === 0 ? '0px' : '40px'}} className="flex items-start gap-8 transition-colors duration-300 !pb-[40px] border-b border-[#454545]">
                             {/* Date Block */}
                             <div className="!py-[20px]">
@@ -123,11 +144,13 @@ export default function UpcomingEvents() {
                 </div>
 
                 {/* See All Events Button */}
-                <div className="text-center !mt-[135px]">
-                    <button className="border-[2px] hover:cursor-pointer border-white text-white !px-[70px] !py-[20px] rounded-[4px] font-bold text-[16px] hover:bg-white hover:text-[#2A2A2A] transition-colors duration-300">
-                        SEE ALL EVENTS
-                    </button>
-                </div>
+                {!showAllEvents && (
+                    <div className="text-center !mt-[135px]">
+                        <button className="border-[2px] hover:cursor-pointer border-white text-white !px-[70px] !py-[20px] rounded-[4px] font-bold text-[16px] hover:bg-white hover:text-[#2A2A2A] transition-colors duration-300">
+                            SEE ALL EVENTS
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );
