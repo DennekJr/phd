@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import YellowButton from './YellowButton';
 
-export default function UpcomingEvents({showAllEvents = false}: {showAllEvents?: boolean}) {
+export default function UpcomingEvents({ showAllEvents = false }: { showAllEvents?: boolean }) {
     const events = [
         {
             date: {
@@ -53,7 +53,7 @@ export default function UpcomingEvents({showAllEvents = false}: {showAllEvents?:
             description: 'Description: An elegant evening in Lagos celebrating academic achievements and recognizing our annual scholarship recipients. Features a keynote address and networking opportunities.',
             image: '/images/upcoming-events/event-three.jpg'
         },
-        
+
     ];
 
     return (
@@ -84,7 +84,7 @@ export default function UpcomingEvents({showAllEvents = false}: {showAllEvents?:
                 {/* Events List */}
                 <div className="space-y-12">
                     {events.slice(0, showAllEvents ? events.length : 3).map((event, index) => (
-                        <div key={index} style={{paddingTop: index === 0 ? '0px' : '40px'}} className="flex items-start gap-8 transition-colors duration-300 !pb-[40px] border-b border-[#454545]">
+                        <div key={index} style={{ paddingTop: index === 0 ? '0px' : '40px' }} className="flex items-start gap-8 transition-colors duration-300 !pb-[40px] border-b border-[#454545]">
                             {/* Date Block */}
                             <div className="!py-[20px]">
                                 <div className="bg-[#AD0000] text-white text-center w-[102px] h-[78px] flex flex-col justify-center">
@@ -104,16 +104,6 @@ export default function UpcomingEvents({showAllEvents = false}: {showAllEvents?:
                                 <p className="text-[16px] font-light text-[#FFFFFF] !mb-[34px] !leading-[100%] !tracking-[0%]">
                                     {event.description}
                                 </p>
-
-                                {/* Action Buttons */}
-                                <div className="flex gap-4">
-                                    <YellowButton>
-                                        Register
-                                    </YellowButton>
-                                    <button className="text-white hover:cursor-pointer underline font-extrabold !tracking-[0.2px] !leading-[16px] !px-[70px] !py-[20px] font-bold text-[16px] hover:text-[#fff]/90 transition-colors duration-300">
-                                        VIEW DETAILS
-                                    </button>
-                                </div>
                             </div>
 
                             {/* Event Image */}

@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="relative bottom-[200px] z-10 container mx-auto !px-[74px] py-20">
         <div className="max-w-[760px]">
           {/* Small heading */}
-          <p className="text-[#FF8B8B] !text-[24px] !leading-[100%] !tracking-[0%] mb-[10px] font-medium">
+          <p className="text-white !text-[36px] !leading-[100%] !tracking-[0%] mb-[10px] font-medium">
             Network for
           </p>
           

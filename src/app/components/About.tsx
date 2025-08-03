@@ -68,7 +68,7 @@ export default function About() {
               </span>
             </div>
 
-            <h2 className="font-bold whitespace-nowrap max-w-[709px] lg:!text-[48px] !leading-[100%] !tracking-[0%] text-[#222121] !mt-[10px] !mb-[26px]">
+            <h2 className="font-bold whitespace-nowrap max-w-[709px] !text-[36px] xl:!text-[48px] !leading-[100%] !tracking-[0%] text-[#222121] !mt-[10px] !mb-[26px]">
               Fostering<br />
               Academic Excellence & <br />
               Socioeconomic Growth.

@@ -1,4 +1,3 @@
-import YellowButton from "@/app/components/YellowButton";
 import Image from "next/image";
 
 export default function EventCardHero() {
@@ -31,12 +30,6 @@ export default function EventCardHero() {
                 <p className="text-[#232427] text-[16px] !leading-[120%] !tracking-[0.01em] font-light text-left">
                     An evening mixer in Lekki, Lagos, offering a relaxed environment for emerging female scholars to connect with experienced PhD holders for mentorship and career advice.
                 </p>
-                <div className="flex items-center gap-[20px]">
-                    <YellowButton variant="primary">Register</YellowButton>
-                    <div className=" !px-[70px] !py-[20px]">
-                        <span className="text-[#232427] text-[16px] !leading-[16px] !tracking-[0.2px] font-extrabold text-center border-b-[2px] border-[#232427] transition-all duration-300 transform hover:cursor-pointer hover:scale-[1.02] hover:shadow-lg">View Details</span>
-                    </div>
-                </div>
             </div>
             <div className="!pr-[16px]">
                 <Image
