@@ -50,9 +50,11 @@ export default function Header() {
 
         {/* JOIN US Button */}
         <div className='flex w-full justify-end'>
+          <a href="mailto:samuelidakwo99@gmail.com?subject=Contact%20Us&body=Hi%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20you.">
           <YellowButton>
-            JOIN US
+            CONTACT US
           </YellowButton>
+          </a>
         </div>
 
         {/* Mobile menu button */}

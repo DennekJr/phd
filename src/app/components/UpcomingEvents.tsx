@@ -107,12 +107,14 @@ export default function UpcomingEvents({showAllEvents = false}: {showAllEvents?:
 
                                 {/* Action Buttons */}
                                 <div className="flex gap-4">
-                                    <YellowButton>
-                                        Register
-                                    </YellowButton>
-                                    <button className="text-white hover:cursor-pointer underline font-extrabold !tracking-[0.2px] !leading-[16px] !px-[70px] !py-[20px] font-bold text-[16px] hover:text-[#fff]/90 transition-colors duration-300">
+                                    {/* <a href="mailto:samuelidakwo99@gmail.com  ?subject=Contact%20Us&body=Hi%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20you.">
+                                              <YellowButton>
+                                                REGISTER
+                                              </YellowButton>
+                                    </a> */}
+                                    {/* <button className="text-white hover:cursor-pointer underline font-extrabold !tracking-[0.2px] !leading-[16px] !px-[70px] !py-[20px] font-bold text-[16px] hover:text-[#fff]/90 transition-colors duration-300">
                                         VIEW DETAILS
-                                    </button>
+                                    </button> */}
                                 </div>
                             </div>
 

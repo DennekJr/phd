@@ -127,22 +127,24 @@ export default function Footer() {
                             {/* Social Media Icons */}
                             <div className="flex gap-4 justify-end">
                                 {/* YouTube */}
-                                <a
+                                {/* <a
                                     href="#"
                                     className="w-[42px] h-[30px] rounded flex items-center justify-center hover:bg-red-700 transition-colors duration-300"
                                     aria-label="YouTube"
                                 >
                                     <Image src="/images/footer/youtube.svg" alt="YouTube" width={42} height={30} />
-                                </a>
+                                </a> */}
 
                                 {/* Twitter/X */}
-                                <a
+                                {/* <a
                                     href="#"
                                     className="w-[40px] h-[40px] rounded flex items-center justify-center hover:bg-gray-800 transition-colors duration-300"
                                     aria-label="Twitter/X"
                                 >
                                     <Image src="/images/footer/twitter.svg" alt="Twitter" width={40} height={40} />
-                                </a>
+                                </a> */}
+                                {/* Phone number */}
+                                <p>+234 01 1223 3445</p>
                             </div>
                         </div>
                     </div>
