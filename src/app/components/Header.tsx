@@ -1,19 +1,12 @@
 'use client';
 
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
 import YellowButton from './YellowButton';
-import LoginModal from './LoginModal';
-import { useAuth } from '@/contexts/AuthContext';
 
 export default function Header() {
     const pathname = usePathname();
-    const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
-    const { user, isAuthenticated, logout } = useAuth();
 
   return (
     <header className="absolute w-full top-0 left-0 right-0 z-50">
@@ -65,23 +58,11 @@ export default function Header() {
           </Link>
         </div>
         <div className="hidden md:flex items-center justify-end w-full">
-          {isAuthenticated ? (
-            <div className="flex items-center space-x-4">
-              <div className="text-white text-sm">
-                Welcome, {user?.firstName}!
-              </div>
-              <Link href="/profile" className="text-white hover:text-[#EFB025] transition-colors text-sm">
-                Profile
-              </Link>
-              <YellowButton onClick={logout} variant="secondary">
-                Logout
-              </YellowButton>
-            </div>
-          ) : (
-            <YellowButton onClick={() => setIsLoginModalOpen(true)}>
+          <a href="mailto:NENFPHAS@gmail.com">
+            <YellowButton>
               Join Us
             </YellowButton>
-          )}
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -91,12 +72,6 @@ export default function Header() {
           </svg>
         </button>
       </nav>
-      
-      {/* Login Modal */}
-      <LoginModal 
-        isOpen={isLoginModalOpen} 
-        onClose={() => setIsLoginModalOpen(false)} 
-      />
     </header>
   );
 } 
