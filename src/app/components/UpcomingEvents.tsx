@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import YellowButton from './YellowButton';
 
 export default function UpcomingEvents({ showAllEvents = false }: { showAllEvents?: boolean }) {
     const events = [
