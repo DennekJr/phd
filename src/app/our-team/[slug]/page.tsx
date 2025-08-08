@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { BoardOfTrusteesMembers, ExecutiveTrustees, AssociateFounderTrustees } from '../components/constants';
 
 // This would typically come from a database or API
 // For now, we'll define it here as an example
@@ -63,16 +64,16 @@ interface PageProps {
 }
 
 export default function TeamMemberPage({ params }: PageProps) {
-    const member = teamMembers.find(m => m.slug === params.slug);
+    const member = BoardOfTrusteesMembers.find(m => m.slug === params.slug) || ExecutiveTrustees.find(m => m.slug === params.slug) || AssociateFounderTrustees.find(m => m.slug === params.slug);
 
     if (!member) {
         notFound();
     }
 
     return (
-        <div className="min-h-screen bg-[#FBF7ED]">
+        <div className="min-h-screen bg-[#fff] !px-[75px] !py-[200px]">
             {/* Header */}
-            <div className="bg-white shadow-sm">
+            {/* <div className="bg-white shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                     <Link 
                         href="/our-team" 
@@ -84,8 +85,7 @@ export default function TeamMemberPage({ params }: PageProps) {
                         Back to Our Team
                     </Link>
                 </div>
-            </div>
-
+            </div> */}
             {/* Main Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -95,42 +95,35 @@ export default function TeamMemberPage({ params }: PageProps) {
                             <Image
                                 src={member.image}
                                 alt={member.name}
-                                width={600}
-                                height={700}
-                                className="w-full h-auto rounded-lg shadow-lg"
+                                width={645}
+                                height={650}
+                                className="w-[645px] h-[650px] rounded-lg shadow-lg object-cover"
                             />
-                            {/* Role Badge */}
-                            <div className="absolute top-6 left-6 bg-white text-black px-4 py-2 rounded-md text-sm font-bold shadow-md">
-                                {member.role}
-                            </div>
+                        </div>
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 !pt-[26px] text-[#AD0000]">
+                            <Link
+                                href="/our-team"
+                                className="inline-flex items-center !text-[20px] !font-medium !leading-[100%] gap-[20px] hover:text-[#EFB025] transition-colors"
+                            >
+                                <Image src="/images/our-team/back.svg" alt="Arrow Left" width={20} height={20} />
+                                Back
+                            </Link>
                         </div>
                     </div>
 
                     {/* Bio Section */}
                     <div className="space-y-8">
                         <div>
-                            <h1 className="text-4xl font-bold text-[#232427] mb-4">
+                            <h1 className="text-[24px] !leading-[100%] font-bold text-[#232427] !mb-4">
                                 {member.name}
                             </h1>
-                            <div className="w-20 h-1 bg-[#EFB025] rounded-full"></div>
+                            <div className="!mb-4 text-[20px] !font-bold !leading-[100%] !text-[#AD0000]">Member, {member.member}</div>
                         </div>
 
                         <div className="prose prose-lg max-w-none">
-                            <p className="text-[#454545] leading-relaxed text-lg">
+                            <p className="text-[#454545] leading-relaxed text-[16px] !font-light !leading-[30px]">
                                 {member.info}
                             </p>
-                        </div>
-
-                        {/* Contact/Additional Info Section */}
-                        <div className="bg-white p-6 rounded-lg shadow-sm">
-                            <h3 className="text-xl font-semibold text-[#232427] mb-4">
-                                Contact Information
-                            </h3>
-                            <div className="space-y-2 text-[#454545]">
-                                <p>For inquiries about {member.name.split(' ')[0]}, please contact our team.</p>
-                                <p>Email: info@organization.org</p>
-                                <p>Phone: +234 XXX XXX XXXX</p>
-                            </div>
                         </div>
                     </div>
                 </div>

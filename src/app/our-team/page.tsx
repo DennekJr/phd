@@ -5,7 +5,7 @@ import AssociateFounders from './components/AssociateFounders';
 
 export default function OurTeam() {
     return (
-        <div>
+        <div className='!bg-white'>
             <MeetOurTeam />
             <BoardOfTrustees />
             <AssociateFounders />

@@ -14,11 +14,12 @@ interface TeamGridProps {
     description: string;
     members: TeamMember[];
     scribbleImage?: string;
+    className?: string;
 }
 
-export default function TeamGrid({ title, description, members, scribbleImage }: TeamGridProps) {
+export default function TeamGrid({ title, description, members, scribbleImage, className }: TeamGridProps) {
     return (
-        <section className="relative bg-[#FBF7ED] !pt-[112px] !px-[200px]">
+        <section className={`relative bg-[#FBF7ED] !pt-[112px] !px-[200px] ${className}`}>
             <div className="max-w-[1920px] mx-auto">
                 {/* Header Section */}
                 <div className="mb-16 sm:mb-20 md:mb-24 lg:!mb-[103px]">

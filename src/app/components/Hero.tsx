@@ -31,14 +31,14 @@ export default function Hero() {
           </p>
           
           {/* Main heading */}
-          <h1 className="font-serif !text-[60px] !leading-[80px] !tracking-[0%] font-bold text-white mb-[20px] leading-tight">
+          <h1 className="!text-[60px] !leading-[100%] !tracking-[0%] font-bold text-white !mb-[20px] leading-tight">
             Nigerian Female<br />
             PHD Holders in<br />
             <span className="uppercase">ARTS & SCIENCES</span>
           </h1>
           
           {/* Subtitle */}
-          <p className="max-w-[546px] !text-[24px] !leading-[100%] !tracking-[0%] !pb-[50px] font-light text-white">
+          <p className="max-w-[546px] !text-[24px] !leading-[100%] !tracking-[0%] !pb-[50px] !font-light text-white">
             Empowering Nigerian Women in Academia for National Development
           </p>
           

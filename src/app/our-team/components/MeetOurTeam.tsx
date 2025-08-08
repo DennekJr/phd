@@ -1,4 +1,4 @@
-import TeamGrid from './TeamGrid';
+import Image from 'next/image';
 
 export default function MeetOurTeam() {
     const teamMembers = [
@@ -11,12 +11,49 @@ export default function MeetOurTeam() {
         }
     ];
 
+    const experiences = [
+        {
+            title: "Socio-economic Policy Expertise",
+            description: "Specializes in socio-economic policy analysis for developing countries, with a significant emphasis on youth and women empowerment and poverty reduction, drawing from her PhD research from the University of Bristol."
+        },
+        {
+            title: "Extensive Public Service Career",
+            description: "Meritoriously served the Central Bank of Nigeria for 34 years, retiring in 2023 from an executive cadre position, and now provides private consultation on socio-economic policy."
+        },
+        {
+            title: "Academic and Professional Development",
+            description: "Holds a Doctor of Social Science in Policy from the University of Bristol, an M.A. in International Development Studies from the University of Bradford, and earlier qualifications in Agricultural Cooperatives and Cooperative Economics and Management."
+        }
+    ]
+
     return (
-        <TeamGrid
-            title="Meet Our Team"
-            description="Get to know the dedicated individuals who drive the mission of the Network for Nigerian Female PhD Holders in ARTS and SCIENCES."
-            members={teamMembers}
-            scribbleImage="/images/our-team/love-icon.svg"
-        />
+        <div className='!bg-white'>
+            <div className='!px-[200px] !py-[112px] flex flex-col items-center justify-between'>
+                <h2 className='flex w-fit !text-[48px] gap-[23px] !leading-[100%] font-bold text-[#232427]'>Meet Our Team <Image src="/images/our-team/love-icon.svg" alt="Love Icon" width={45} height={57} className='h-[57px] w-auto' /></h2>
+                <p className='!text-[24px] font-light !text-[#454545] !leading-[36px]'>Get to know the dedicated individuals who drive the mission of NENFPHAS</p>
+                <div className='grid grid-cols-1 lg:grid-cols-2 !gap-[66px] !mt-[100px]'>
+                    <div>
+                        {teamMembers.map((member) => (
+                            <div key={member.name}>
+                                <Image src={member.image} alt={member.name} width={645} height={660} className='w-[100%] h-[100%] object-cover' />
+                            </div>
+                        ))}
+                    </div>
+                    <div className='flex flex-col gap-[26px]'>
+                        <h3 className='!text-[24px] font-bold !text-[#232427] !leading-[100%]'>Dr. Ada Esenwah</h3>
+                        <p className='!text-[16px] font-light !text-[#454545] !leading-[30px]'>Dr. Ada Esenwah is a distinguished Socio-economic Policy Analyst with a strong focus on socio-economic growth in developing countries, particularly Nigeria. Her work emphasizes youth and women empowerment and poverty reduction, stemming from her doctoral research on "Youth Poverty Reduction in Nigeria: Policy Perspective." She is also an accomplished author, editor, and organizer of national and international seminars and conferences.</p>
+                        <p className='!text-[24px] font-bold !text-[#454545] !leading-[24px]'>Experience</p>
+                        <div className='flex flex-col gap-[16px]'>
+                            {experiences.map((experience) => (
+                                <div key={experience.title} className='flex gap-[16px] items-start'>
+                                    <Image src="/images/our-team/checkmark.svg" alt="Bullet Point" width={24} height={24} className='h-[24px] w-auto !mt-[6px]' />
+                                    <p className='!text-[16px] font-bold !text-[#454545] !leading-[30px]'>{experience.title}: <span className='!text-[16px] font-light !text-[#454545] !leading-[30px]'>{experience.description}</span></p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 } 

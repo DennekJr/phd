@@ -14,7 +14,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center w-full">
           <Image
-            src="/images/text-logo.svg"
+            src={pathname.includes('/our-team') ? "/images/black-text-logo.svg" : "/images/text-logo.svg"}
             alt="NNFPHAS logo"
             width={247}
             height={95}
@@ -29,7 +29,7 @@ export default function Header() {
             href="/"
             style={{ fontWeight: pathname === '/' ? '700' : '400' }}
             className={`!text-[16px] !leading-[100%] !tracking-[10%] no-underline ${
-              pathname === '/our-team' 
+              pathname.includes('/our-team') 
                 ? '!text-[#000000] hover:text-gray-800' 
                 : '!text-[#ffffff] hover:text-gray-200'
             }`}          >
@@ -37,9 +37,9 @@ export default function Header() {
           </Link>
           <Link
             href="/events"
-            style={{ fontWeight: pathname === '/events' ? '700' : '400' }}
+            style={{ fontWeight: pathname.includes('/events') ? '700' : '400' }}
             className={`!text-[16px] !leading-[100%] !tracking-[10%] no-underline ${
-              pathname === '/our-team' 
+              pathname.includes('/our-team') 
                 ? '!text-[#000000] hover:text-gray-800' 
                 : '!text-[#ffffff] hover:text-gray-200'
             }`}          >
@@ -47,9 +47,9 @@ export default function Header() {
           </Link>
           <Link
             href="/our-team"
-            style={{ fontWeight: pathname === '/our-team' ? '700' : '400' }}
+            style={{ fontWeight: pathname.includes('/our-team') ? '700' : '400' }}
             className={`!text-[16px] whitespace-nowrap !leading-[100%] !tracking-[10%] no-underline ${
-              pathname === '/our-team' 
+              pathname.includes('/our-team') 
                 ? '!text-[#000000] hover:text-gray-800' 
                 : '!text-[#ffffff] hover:text-gray-200'
             }`}

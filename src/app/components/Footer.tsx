@@ -33,7 +33,7 @@ export default function Footer() {
                     className="object-cover w-full h-[330px]"
                 />
                 {/* Color overlay */}
-                <div 
+                <div
                     className="absolute inset-0 w-full h-full"
                     style={{ backgroundColor: '#880C24', opacity: 0.75 }}
                 />
@@ -43,46 +43,48 @@ export default function Footer() {
                 <div className="flex w-full gap-16 justify-between">
                     {/* Left Side - Brand and Content */}
                     {/* Logo and Branding */}
-                    <div className="!py-24">
-                        <h1 className="text-[138px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
-                            NNFPHAS
-                        </h1>
-                        <div className="flex items-center gap-4 mb-6">
-                            <div className="border-[2px] !gap-[31px] flex border-[#FDC182] !max-w-[642px] !px-[13px] !py-[18px] text-[#FDC182]">
-                                <span className='font-bold whitespace-nowrap leading-[100%] text-[44px]'> © 2025</span>
-                                <span className='text-[24px] !font-medium !leading-[100%]'>Nigerian Female PHD Holders in Arts & Sciences</span>
+                    <div className='flex flex-col min-[1500px]:flex-row min-[1500px]:gap-16'>
+                        <div className="max-[1500px]:!pb-0 !py-24 flex-1">
+                            <h1 className="text-[138px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
+                                NNFPHAS
+                            </h1>
+                            <div className="flex items-center gap-4 mb-6">
+                                <div className="border-[2px] !gap-[31px] flex border-[#FDC182] !max-w-[642px] !px-[13px] !py-[18px] text-[#FDC182]">
+                                    <span className='font-bold whitespace-nowrap leading-[100%] text-[44px]'> © 2025</span>
+                                    <span className='text-[24px] !font-medium !leading-[100%]'>Nigerian Female PHD Holders in Arts & Sciences</span>
+                                </div>
                             </div>
+                        </div>
+                        {/* Description */}
+                        <div className="!text-[#FDC182] !py-[41px] flex-1">
+                            <div className='!mb-[25px]'>
+                                <Image src="/images/footer/nigeria.svg" alt="Footer logo" width={71} height={101} />
+                            </div>
+                            <p className="font-medium text-[14px] !leading-[130%] !tracking-[0%] max-w-[487px]">
+                                I welcome everyone to this unique Association, the Network for Nigerian
+                                Female PhD Holders in Arts and Sciences - (NNFPHAS) with great delight,
+                                especially members of the Board of Trustees and the Executive Officers. This
+                                is an Association for all to contribute towards the development of Nigeria
+                                and the upliftment of the academic status of women. I believe that,
+                                together we can make a difference to support our dear country through this
+                                platform, which is our desire. This is my team member and committee that
+                                will work assiduously with their diverse experiences, knowledge, and
+                                disciplines, patriotism, and dedication to make our goal a success.
+                            </p>
+                            <p className="text-[14px] font-bold !mt-[15px]">
+                                DR. ADAEZE PATRICIA ESENYANWU (Founder & President of NNFPHAS)
+                            </p>
                         </div>
                     </div>
 
-                    {/* Description */}
-                    <div className="!text-[#FDC182] !py-[41px]">
-                        <div className='!mb-[25px]'>
-                            <Image src="/images/footer/nigeria.svg" alt="Footer logo" width={71} height={101} />
-                        </div>
-                        <p className="font-medium text-[14px] !leading-[130%] !tracking-[0%] max-w-[487px]">
-                            I welcome everyone to this unique Association, the Network for Nigerian
-                            Female PhD Holders in Arts and Sciences - (NNFPHAS) with great delight,
-                            especially members of the Board of Trustees and the Executive Officers. This
-                            is an Association for all to contribute towards the development of Nigeria
-                            and the upliftment of the academic status of women. I believe that,
-                            together we can make a difference to support our dear country through this
-                            platform, which is our desire. This is my team member and committee that
-                            will work assiduously with their diverse experiences, knowledge, and
-                            disciplines, patriotism, and dedication to make our goal a success.
-                        </p>
-                        <p className="text-[14px] font-bold !mt-[15px]">
-                            DR. ADAEZE PATRICIA ESENYANWU (Founder & President of NNFPHAS)
-                        </p>
-                    </div>
                     {/* Right Side - Navigation */}
-                    <div className="max-w-[232px] text-white !py-[41px]">
+                    <div className="text-white !py-[41px]">
                         <nav className="mb-8">
                             <ul className="text-right">
                                 {navigationLinks.map((link) => {
                                     const isAboutOrWhatWeDo = link.name === 'About' || link.name === 'What We Do';
                                     const isHome = link.name === 'HOME';
-                                    if(isAboutOrWhatWeDo) {
+                                    if (isAboutOrWhatWeDo) {
                                         return (
                                             <li key={link.name}>
                                                 <Link
@@ -94,7 +96,7 @@ export default function Footer() {
                                             </li>
                                         )
                                     }
-                                    if(isHome) {
+                                    if (isHome) {
                                         return (
                                             <li key={link.name}>
                                                 <Link
@@ -121,27 +123,29 @@ export default function Footer() {
                         </nav>
 
                         {/* Contact Info */}
-                        <div className="mb-8 text-right">
+                        <div className="text-right">
                             <p className="!text-[16px] text-[#FDC182] font-medium !mb-[15px]">(Connect with us)</p>
 
                             {/* Social Media Icons */}
-                            <div className="flex gap-4 justify-end">
-                                {/* YouTube */}
+                            <div className="flex flex-col items-end gap-4 justify-end">
+                                {/* Email */}
                                 <a
-                                    href="#"
-                                    className="w-[42px] h-[30px] rounded flex items-center justify-center hover:bg-red-700 transition-colors duration-300"
-                                    aria-label="YouTube"
+                                    href="mailto:NENFPHAS@gmail.com"
+                                    className="flex items-center justify-center gap-[23px]"
+                                    aria-label="Email"
                                 >
-                                    <Image src="/images/footer/youtube.svg" alt="YouTube" width={42} height={30} />
+                                    <span className='text-[16px] leading-[150%] font-bold'>NENFPHAS@gmail.com</span>
+                                    <Image src="/images/footer/mail.svg" alt="Email" width={41} height={33} />
                                 </a>
 
-                                {/* Twitter/X */}
+                                {/* Phone Number */}
                                 <a
-                                    href="#"
-                                    className="w-[40px] h-[40px] rounded flex items-center justify-center hover:bg-gray-800 transition-colors duration-300"
-                                    aria-label="Twitter/X"
+                                    href="tel:08162375044"
+                                    className="flex items-center justify-center gap-[23px]"
+                                    aria-label="Phone Number"
                                 >
-                                    <Image src="/images/footer/twitter.svg" alt="Twitter" width={40} height={40} />
+                                    <span className='text-[16px] leading-[150%] font-bold'>08162375044</span>
+                                    <Image src="/images/footer/phone.svg" alt="Phone" width={25} height={40} />
                                 </a>
                             </div>
                         </div>
