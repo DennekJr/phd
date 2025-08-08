@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import { useRef, useState } from "react";
 
 export default function WhatWeDo() {
   const activities = [
@@ -45,19 +48,93 @@ export default function WhatWeDo() {
     }
   ];
 
+  // Mobile carousel state/refs
+  const carouselRef = useRef<HTMLDivElement | null>(null);
+  const [activeIdx, setActiveIdx] = useState<number>(0);
+  const slideRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  const handleScroll = () => {
+    const container = carouselRef.current;
+    if (!container) return;
+    const scrollLeft = container.scrollLeft;
+    let nearestIndex = 0;
+    let minDistance = Number.POSITIVE_INFINITY;
+
+    slideRefs.current.forEach((el, idx) => {
+      if (!el) return;
+      const distance = Math.abs(el.offsetLeft - scrollLeft);
+      if (distance < minDistance) {
+        minDistance = distance;
+        nearestIndex = idx;
+      }
+    });
+
+    setActiveIdx(nearestIndex);
+  };
+
+  const scrollToIndex = (index: number) => {
+    const container = carouselRef.current;
+    const target = slideRefs.current[index];
+    if (!container || !target) return;
+    container.scrollTo({ left: target.offsetLeft, behavior: "smooth" });
+  };
+
   return (
     <section className="relative flex items-center justify-center bg-white !pt-[125px] !pb-[146px] !px-[76px]">
       <div className="mx-auto max-w-[1920px]">
         {/* Header */}
-        <div className="text-center !mb-[135px]">
-          <h2 className="text-[48px] font-bold text-[#222121] leading-[100%] flex items-center justify-center gap-2">
+        <div className="text-center !mb-[50px] lg:!mb-[135px]">
+          <h2 className="text-[24px] lg:text-[48px] font-bold text-[#222121] leading-[100%] flex items-center justify-center gap-2">
             What We Do
-            <Image src={'/images/what-we-do/stars.svg'} alt='Title Icon' width={88} height={91} className="!w-[88px] !h-[91px]" />
+            <Image src={'/images/what-we-do/stars.svg'} alt='Title Icon' width={88} height={91} className="!w-[51px] lg:!w-[88px] !h-[53px] lg:!h-[91px]" />
           </h2>
         </div>
 
-        {/* Activities Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-[70px]">
+        {/* Activities - Mobile Carousel */}
+        <div className="md:hidden">
+          <div
+            ref={carouselRef}
+            onScroll={handleScroll}
+            className="w-[90vw] mx-right !px-[20px] flex overflow-x-auto gap-[22px] snap-x snap-mandatory px-2 [-webkit-overflow-scrolling:touch] scroll-smooth no-scrollbar"
+          >
+            {activities.map((activity, index) => (
+              <div
+                key={index}
+                ref={(el) => { slideRefs.current[index] = el; }}
+                className="snap-start shrink-0 w-[85%] first:ml-2 last:mr-2 bg-[#F9F5F2] min-h-[400px] lg:min-h-[510px] !px-[23px] !py-[53px] shadow-sm"
+              >
+                <div className="!mb-4">
+                  <Image src={activity.icon} alt={activity.title} width={45} height={45} />
+                </div>
+                <h3 className="text-[24px] font-semibold text-[#222121] !mb-6 !leading-[100%] !tracking-[0%]">
+                  {activity.title}
+                </h3>
+                <p className="text-[16px] font-light text-[#222121] !leading-[28px] !tracking-[0%]">
+                  {activity.description}
+                </p>
+                {activity.descriptionTwo && (
+                  <p className="text-[16px] font-light text-[#222121] !leading-[28px] !tracking-[0%] mt-2">
+                    {activity.descriptionTwo}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+          {/* Dots */}
+          <div className="flex items-center justify-center gap-3 !mt-[48px]">
+            {activities.map((_, i) => (
+              <button
+                key={i}
+                aria-label={`Go to slide ${i + 1}`}
+                onClick={() => scrollToIndex(i)}
+                className={`rounded-full ${i === activeIdx ? 'bg-[#B00000] h-[15px] w-[15px]' : 'bg-[#D9D9D9] h-[10px] w-[10px]'}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Activities Grid - Desktop/Tablet */}
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-[70px]">
           {activities.map((activity, index) => (
             <div key={index} className="bg-[#F9F5F2] w-full min-h-[510px] !px-[23px] !py-[53px] shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="!mb-4">
@@ -69,6 +146,11 @@ export default function WhatWeDo() {
               <p className="text-[16px] font-light text-[#222121] !leading-[28px] !tracking-[0%]">
                 {activity.description}
               </p>
+              {activity.descriptionTwo && (
+                <p className="text-[16px] font-light text-[#222121] !leading-[28px] !tracking-[0%] mt-2">
+                  {activity.descriptionTwo}
+                </p>
+              )}
             </div>
           ))}
         </div>
