@@ -1,4 +1,3 @@
-import { formatMultiLineString } from '@/utils/stringFormatter';
 import TeamGrid from './TeamGrid';
 import { ExecutiveTrustees } from './constants';
 
