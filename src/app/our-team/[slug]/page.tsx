@@ -71,21 +71,7 @@ export default function TeamMemberPage({ params }: PageProps) {
     }
 
     return (
-        <div className="min-h-screen bg-[#fff] !px-[75px] !py-[200px]">
-            {/* Header */}
-            {/* <div className="bg-white shadow-sm">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                    <Link 
-                        href="/our-team" 
-                        className="inline-flex items-center text-[#232427] hover:text-[#EFB025] transition-colors"
-                    >
-                        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                        </svg>
-                        Back to Our Team
-                    </Link>
-                </div>
-            </div> */}
+        <div className="min-h-screen bg-[#fff] !px-[20px] md:!px-[75px] !pb-[100px] md:!pb-[200px] !py-[200px]">
             {/* Main Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

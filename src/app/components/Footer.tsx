@@ -39,24 +39,24 @@ export default function Footer() {
                 />
             </div>
 
-            <div className="relative w-full z-10 mx-auto !px-[76px]">
-                <div className="flex w-full gap-16 justify-between">
+            <div className="relative w-full z-10 mx-auto !px-[20px] lg:!px-[76px]">
+                <div className="flex flex-col-reverse lg:flex-row w-full !gap-[20px] lg:!gap-16 justify-between">
                     {/* Left Side - Brand and Content */}
                     {/* Logo and Branding */}
-                    <div className='flex flex-col min-[1500px]:flex-row min-[1500px]:gap-16'>
-                        <div className="max-[1500px]:!pb-0 !py-24 flex-1">
-                            <h1 className="text-[138px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
+                    <div className='flex flex-col-reverse xl:flex-row min-[1500px]:flex-row min-[1500px]:gap-16'>
+                        <div className="!pt-[60px] xl:pt-0 !pb-[100px] xl:!pb-0 xl:!py-24 flex-1">
+                            <h1 className="!text-[60px] lg:!text-[138px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
                                 NNFPHAS
                             </h1>
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="border-[2px] !gap-[31px] flex border-[#FDC182] !max-w-[642px] !px-[13px] !py-[18px] text-[#FDC182]">
+                                <div className="border-[2px] !gap-[31px] flex flex-col md:flex-row border-[#FDC182] !max-w-[642px] !px-[13px] !py-[18px] text-[#FDC182]">
                                     <span className='font-bold whitespace-nowrap leading-[100%] text-[44px]'> © 2025</span>
                                     <span className='text-[24px] !font-medium !leading-[100%]'>Nigerian Female PHD Holders in Arts & Sciences</span>
                                 </div>
                             </div>
                         </div>
                         {/* Description */}
-                        <div className="!text-[#FDC182] !py-[41px] flex-1">
+                        <div className="!text-[#FDC182] !pt-0 lg:!py-[41px] flex-1">
                             <div className='!mb-[25px]'>
                                 <Image src="/images/footer/nigeria.svg" alt="Footer logo" width={71} height={101} />
                             </div>
@@ -80,7 +80,7 @@ export default function Footer() {
                     {/* Right Side - Navigation */}
                     <div className="text-white !py-[41px]">
                         <nav className="mb-8">
-                            <ul className="text-right">
+                            <ul className="text-left lg:text-right">
                                 {navigationLinks.map((link) => {
                                     const isAboutOrWhatWeDo = link.name === 'About' || link.name === 'What We Do';
                                     const isHome = link.name === 'HOME';
@@ -123,11 +123,11 @@ export default function Footer() {
                         </nav>
 
                         {/* Contact Info */}
-                        <div className="text-right">
+                        <div className="text-left lg:text-right">
                             <p className="!text-[16px] text-[#FDC182] font-medium !mb-[15px]">(Connect with us)</p>
 
                             {/* Social Media Icons */}
-                            <div className="flex flex-col items-end gap-4 justify-end">
+                            <div className="flex flex-col items-start lg:items-end gap-4 justify-end">
                                 {/* Email */}
                                 <a
                                     href="mailto:NENFPHAS@gmail.com"

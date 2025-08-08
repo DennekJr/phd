@@ -3,7 +3,7 @@ import EventCardHero from './Event-Card-Hero';
 
 export default function Hero() {
     return (
-        <section className="relative flex flex-col items-center justify-end w-full min-h-[924px] overflow-hidden !pb-[120px]">
+        <section className="relative flex flex-col items-center justify-end w-full min-h-[924px] overflow-hidden lg:pt-0 pt-[151px] !pb-[120px]">
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full">
                 <Image
@@ -20,10 +20,10 @@ export default function Hero() {
             />
 
             {/* Content Overlay */}
-            <div className="relative z-10 flex items-center justify-center h-full">
+            <div className="relative z-10 flex items-center !pt-[151px] justify-center h-full">
                 <div className="text-center text-white">
-                    <h1 className="text-5xl md:text-[48px] !text-[#FDC182] font-bold !mb-[100px] flex items-center justify-center !gap-[19px]">
-                        Featured Events <span>
+                    <h1 className="text-[24px] md:text-[48px] !text-[#fff] font-bold !mb-[50px] lg:!mb-[100px] flex items-center justify-center !gap-[19px]">
+                        Upcoming Events <span>
                             <Image
                                 src="/images/events/featured-events-header.svg"
                                 alt="Events hero background"
@@ -35,7 +35,7 @@ export default function Hero() {
                         </span>
                     </h1>
                     <EventCardHero />
-                    <div className="flex items-center justify-center gap-[12px] !mt-[31px]">
+                    {/* <div className="flex items-center justify-center gap-[12px] !mt-[31px]">
                         <span className="flex items-center justify-center gap-[10px]">
                             <Image
                                 src="/images/events/location-icon.svg"
@@ -48,7 +48,7 @@ export default function Hero() {
                         <span className="text-[24px] !leading-[100%] !tracking-[0.01em]">
                         The Podium, 124 T. F. Kuboye Rd, Lekki Phase I, Lekki 106104, Lagos
                         </span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

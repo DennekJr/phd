@@ -28,10 +28,10 @@ export default function MeetOurTeam() {
 
     return (
         <div className='!bg-white'>
-            <div className='!px-[200px] !py-[112px] flex flex-col items-center justify-between'>
-                <h2 className='flex w-fit !text-[48px] gap-[23px] !leading-[100%] font-bold text-[#232427]'>Meet Our Team <Image src="/images/our-team/love-icon.svg" alt="Love Icon" width={45} height={57} className='h-[57px] w-auto' /></h2>
-                <p className='!text-[24px] font-light !text-[#454545] !leading-[36px]'>Get to know the dedicated individuals who drive the mission of NENFPHAS</p>
-                <div className='grid grid-cols-1 lg:grid-cols-2 !gap-[66px] !mt-[100px]'>
+            <div className='!px-[20px] lg:!px-[200px] !pt-[150px] !pb-[100px] lg:!pb-[112px] flex flex-col items-center justify-between'>
+                <h2 className='flex w-fit !text-[24px] lg:!text-[48px] gap-[23px] !leading-[100%] font-bold text-[#232427]'>Meet Our Team <Image src="/images/our-team/love-icon.svg" alt="Love Icon" width={45} height={57} className='lg:h-[57px] h-[30px] w-auto' /></h2>
+                <p className='!text-[16px] lg:!text-[24px] font-light !text-[#454545] !leading-[36px]'>Get to know the dedicated individuals who drive the mission of NENFPHAS</p>
+                <div className='grid grid-cols-1 lg:grid-cols-2 !gap-[20px] lg:!gap-[66px] !mt-[50px] lg:!mt-[100px]'>
                     <div>
                         {teamMembers.map((member) => (
                             <div key={member.name}>

@@ -2,17 +2,17 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import YellowButton from './YellowButton';
 
 export default function Header() {
     const pathname = usePathname();
-
+    const router = useRouter();
   return (
     <header className="absolute w-full top-0 left-0 right-0 z-50">
-      <nav className="w-full !py-[31.5px] !px-[74px] flex items-center justify-between relative gap-4">
+      <nav className="w-full !py-[31.5px] !px-[20px] md:!px-[75px] flex items-center justify-between relative gap-4">
         {/* Logo */}
-        <div className="flex items-center w-full">
+        <div className="flex items-center w-full" onClick={() => router.push('/')}>
           <Image
             src={pathname.includes('/our-team') ? "/images/black-text-logo.svg" : "/images/text-logo.svg"}
             alt="NNFPHAS logo"
@@ -67,7 +67,7 @@ export default function Header() {
 
         {/* Mobile menu button */}
         <button className="md:hidden flex items-center">
-          <svg className="w-6 h-6" fill="none" stroke="#ffffff" viewBox="0 0 24 24">
+          <svg className="w-10 h-10" fill="none" stroke={pathname.includes('/our-team') ? "#000000" : pathname === '/' ? "#C50A14" : "#000000"} viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>

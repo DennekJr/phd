@@ -19,8 +19,8 @@ interface TeamGridProps {
 
 export default function TeamGrid({ title, description, members, scribbleImage, className }: TeamGridProps) {
     return (
-        <section className={`relative bg-[#FBF7ED] !pt-[112px] !px-[200px] ${className}`}>
-            <div className="max-w-[1920px] mx-auto">
+        <section className={`relative w-full bg-[#FBF7ED] !pt-[112px] !px-[20px] lg:!px-[60px] xl:!px-[200px] ${className}`}>
+            <div className="max-w-[1250px] !mx-auto">
                 {/* Header Section */}
                 <div className="mb-16 sm:mb-20 md:mb-24 lg:!mb-[103px]">
                     <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-12">
@@ -51,7 +51,7 @@ export default function TeamGrid({ title, description, members, scribbleImage, c
                 </div>
 
                 {/* Team Members Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:!gap-x-[30px] !gap-y-[60px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 !gap-x-[16px] md:!gap-x-[30px] !gap-y-[60px]">
                     {members.map((member, index) => (
                         <Link 
                             href={`/our-team/${member.slug}`} 
@@ -65,7 +65,7 @@ export default function TeamGrid({ title, description, members, scribbleImage, c
                                     alt={member.name}
                                     width={412}
                                     height={377}
-                                    className="w-[412px] h-[377px] object-cover"
+                                    className="w-full md:w-[412px] h-[377px] object-cover"
                                 />
                                 {/* Role Badge */}
                                 <div className="absolute top-[31px] left-[15px] bg-[#ffffff] text-[#000000] !px-[14px] !py-[10px] rounded-md text-sm font-bold">
