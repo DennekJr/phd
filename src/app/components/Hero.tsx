@@ -43,9 +43,11 @@ export default function Hero() {
           </p>
           
           {/* CTA Button */}
-          <YellowButton>
-            JOIN US
-          </YellowButton>
+          <a href="mailto:NENFPHAS@gmail.com">
+            <YellowButton>
+              Join Us
+            </YellowButton>
+          </a>
         </div>
       </div>
 
