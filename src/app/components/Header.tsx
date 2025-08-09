@@ -74,16 +74,25 @@ export default function Header() {
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
         >
-          <svg className="w-10 h-10" fill="none" stroke={pathname.includes('/our-team') ? "#000000" : pathname === '/' ? "#C50A14" : "#000000"} viewBox="0 0 24 24">
+          <svg className="w-10 h-10" fill="none" stroke={pathname.includes('/our-team') ? "#000000" : pathname === '/' ? "#C50A14" : "#ffffff"} viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </nav>
 
+      {/* Overlay when mobile menu is open */}
+      {isOpen && (
+        <div
+          className="md:hidden fixed inset-0 bg-black/90 transition-opacity duration-300 opacity-100 z-40"
+          onClick={() => setIsOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
       {/* Mobile slide-down menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden absolute left-0 right-0 top-[88px] !pb-[50px] !p-[20px] !mx-[20px] bg-white !border-t !border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
+        className={`md:hidden z-50 absolute left-0 right-0 top-[88px] !pb-[50px] !p-[20px] !mx-[20px] bg-white !border-t !border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
       >
         <div className="flex flex-col gap-4 p-5">
         <Image
@@ -103,7 +112,7 @@ export default function Header() {
           <Link href="/our-team" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
             Our Team
           </Link>
-          <a href="mailto:NENFPHAS@gmail.com" onClick={() => setIsOpen(false)} className="!mt-[100px]">
+          <a href="mailto:NENFPHAS@gmail.com" onClick={() => setIsOpen(false)} className="mt-2">
             <YellowButton className="w-full">Join Us</YellowButton>
           </a>
         </div>
