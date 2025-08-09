@@ -83,9 +83,17 @@ export default function Header() {
       {/* Mobile slide-down menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden absolute left-0 right-0 top-[88px] mx-auto bg-white border-t border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
+        className={`md:hidden absolute left-0 right-0 top-[88px] !pb-[50px] !p-20 !mx-[20px] bg-white !border-t !border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
       >
         <div className="flex flex-col gap-4 p-5">
+        <Image
+            src="/images/black-text-logo.svg"
+            alt="NNFPHAS logo"
+            width={247}
+            height={95}
+            priority
+            className="h-auto w-auto"
+          />
           <Link href="/" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
             Home
           </Link>
@@ -95,7 +103,7 @@ export default function Header() {
           <Link href="/our-team" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
             Our Team
           </Link>
-          <a href="mailto:NENFPHAS@gmail.com" onClick={() => setIsOpen(false)} className="mt-2">
+          <a href="mailto:NENFPHAS@gmail.com" onClick={() => setIsOpen(false)} className="!mt-[100px]">
             <YellowButton className="w-full">Join Us</YellowButton>
           </a>
         </div>
