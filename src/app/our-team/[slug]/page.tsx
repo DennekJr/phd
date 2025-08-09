@@ -57,13 +57,13 @@ const teamMembers = [
     }
 ];
 
-interface PageProps {
+interface TeamMemberPageProps {
     params: {
         slug: string;
     };
 }
 
-export default function TeamMemberPage({ params }: PageProps) {
+export default function TeamMemberPage({ params }: TeamMemberPageProps) {
     const member = BoardOfTrusteesMembers.find(m => m.slug === params.slug) || ExecutiveTrustees.find(m => m.slug === params.slug) || AssociateFounderTrustees.find(m => m.slug === params.slug);
 
     if (!member) {
