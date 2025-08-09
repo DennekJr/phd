@@ -4,10 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import YellowButton from './YellowButton';
+import { useState } from 'react';
 
 export default function Header() {
     const pathname = usePathname();
     const router = useRouter();
+    const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="absolute w-full top-0 left-0 right-0 z-50">
       <nav className="w-full !py-[31.5px] !px-[20px] md:!px-[75px] flex items-center justify-between relative gap-4">
@@ -66,12 +68,38 @@ export default function Header() {
         </div>
 
         {/* Mobile menu button */}
-        <button className="md:hidden flex items-center">
+        <button
+          className="md:hidden flex items-center"
+          onClick={() => setIsOpen(open => !open)}
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
+        >
           <svg className="w-10 h-10" fill="none" stroke={pathname.includes('/our-team') ? "#000000" : pathname === '/' ? "#C50A14" : "#000000"} viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </nav>
+
+      {/* Mobile slide-down menu */}
+      <div
+        id="mobile-menu"
+        className={`md:hidden absolute left-0 right-0 top-[88px] mx-auto bg-white border-t border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
+      >
+        <div className="flex flex-col gap-4 p-5">
+          <Link href="/" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
+            Home
+          </Link>
+          <Link href="/events" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
+            Events
+          </Link>
+          <Link href="/our-team" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
+            Our Team
+          </Link>
+          <a href="mailto:NENFPHAS@gmail.com" onClick={() => setIsOpen(false)} className="mt-2">
+            <YellowButton className="w-full">Join Us</YellowButton>
+          </a>
+        </div>
+      </div>
     </header>
   );
 } 
