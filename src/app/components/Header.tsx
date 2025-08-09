@@ -69,7 +69,7 @@ export default function Header() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden flex items-center"
+          className="md:hidden flex items-center p-[4px]"
           onClick={() => setIsOpen(open => !open)}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
@@ -83,7 +83,7 @@ export default function Header() {
       {/* Mobile slide-down menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden absolute left-0 right-0 top-[88px] !pb-[50px] !p-20 !mx-[20px] bg-white !border-t !border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
+        className={`md:hidden absolute left-0 right-0 top-[88px] !pb-[50px] !p-[20px] !mx-[20px] bg-white !border-t !border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
       >
         <div className="flex flex-col gap-4 p-5">
         <Image
