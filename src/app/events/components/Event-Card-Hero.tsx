@@ -19,8 +19,8 @@ export default function EventCardHero() {
     };
     return (
         <div className="bg-[#FFFFFF] lg:mx-0 lg:px-0 !mx-[20px] !px-[20px] flex flex-col-reverse lg:flex-row items-start justify-between !py-[18px] !gap-[20px] lg:!gap-[41px]">
-            <div className="flex flex-col max-w-[576px] items-start justify-start gap-[20px] lg:!pl-[37px]">
-                <h1 className="text-[#232427] whitespace-nowrap !text-left !text-[36px] !leading-[100%] font-bold">
+            <div className="flex flex-col sm:max-w-[576px] items-start justify-start gap-[20px] lg:!pl-[37px]">
+                <h1 className="text-[#232427] sm:whitespace-nowrap !text-left !text-[36px] !leading-[100%] font-bold">
                     &quot;Meet the Mentors&quot; Mixer
                 </h1>
                 <div className="flex items-center gap-[20px]">
