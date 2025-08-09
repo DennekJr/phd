@@ -21,7 +21,7 @@ export default function Header() {
             width={247}
             height={95}
             priority
-            className="h-auto w-auto"
+            className="md:h-[95px] h-[70px] md:w-[247px] w-[180px]"
           />
         </div>
 
@@ -69,7 +69,7 @@ export default function Header() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden flex items-center p-[4px]"
+          className="md:hidden flex items-center !p-[16px]"
           onClick={() => setIsOpen(open => !open)}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
