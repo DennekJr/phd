@@ -57,14 +57,9 @@ const teamMembers = [
     }
 ];
 
-interface TeamMemberPageProps {
-    params: {
-        slug: string;
-    };
-}
-
-export default function TeamMemberPage({ params }: TeamMemberPageProps) {
-    const member = BoardOfTrusteesMembers.find(m => m.slug === params.slug) || ExecutiveTrustees.find(m => m.slug === params.slug) || AssociateFounderTrustees.find(m => m.slug === params.slug);
+export default async function TeamMemberPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const member = BoardOfTrusteesMembers.find(m => m.slug === slug) || ExecutiveTrustees.find(m => m.slug === slug) || AssociateFounderTrustees.find(m => m.slug === slug);
 
     if (!member) {
         notFound();
