@@ -14,14 +14,14 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "NNFPHAS - Network for Nigerian Female PHD Holders in Arts & Sciences",
+  title: "NENFPHAS - Network for Nigerian Female PHD Holders in Arts & Sciences",
   description:
     "Empowering Nigerian Women in Academia for National Development. Join our network of accomplished female PhD holders making a difference in arts and sciences.",
   keywords:
     "Nigerian women, PhD holders, academia, arts, sciences, networking, empowerment, education",
-  authors: [{ name: "NNFPHAS" }],
+  authors: [{ name: "NENFPHAS" }],
   openGraph: {
-    title: "NNFPHAS - Network for Nigerian Female PHD Holders",
+    title: "NENFPHAS - Network for Nigerian Female PHD Holders",
     description: "Empowering Nigerian Women in Academia for National Development",
     type: "website",
   },
