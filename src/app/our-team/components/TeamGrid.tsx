@@ -68,9 +68,9 @@ export default function TeamGrid({ title, description, members, scribbleImage, c
                                     className="w-full md:w-[412px] h-[377px] object-cover"
                                 />
                                 {/* Role Badge */}
-                                <div className="absolute top-[31px] left-[15px] bg-[#ffffff] text-[#000000] !px-[14px] !py-[10px] rounded-md text-sm font-bold">
+                                {/* <div className="absolute top-[31px] left-[15px] bg-[#ffffff] text-[#000000] !px-[14px] !py-[10px] rounded-md text-sm font-bold">
                                     {member.role}
-                                </div>
+                                </div> */}
                             </div>
                             
                             {/* Name */}
@@ -78,6 +78,9 @@ export default function TeamGrid({ title, description, members, scribbleImage, c
                                 <h3 className="!text-[18px] text-[#232427] leading-[100%]">
                                     {member.name}
                                 </h3>
+                                <p className="!text-[14px] !pt-[10px] font-bold !text-[#454545] !leading-[100%] !tracking-[0%]">
+                                    {member.role}
+                                </p>
                             </div>
                         </Link>
                     ))}

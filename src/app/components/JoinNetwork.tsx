@@ -20,10 +20,10 @@ export default function JoinNetwork() {
               </span>
             </h2>
             <p className="!text-[16px] lg:!text-[24px] !font-light text-white mx-auto !leading-[24px] lg:!leading-[100%] tracking-[0%] !mb-[20px]">
-              Are you a Nigerian woman holding a PhD in Arts or Sciences? Do you want to connect with like-minded scholars, contribute to national development, and champion academic excellence?
+            Are you a Nigerian woman holding a PhD in Arts or Sciences? Do you want to connect with like-minded scholars, contribute to national development, and champion academic excellence?
             </p>
             <p className="!text-[16px] lg:!text-[24px] !font-light text-white mx-auto !leading-[24px] lg:!leading-[100%] tracking-[0%] !mb-[20px]">
-              The Network for Nigerian Female PhD Holders in ARTS and SCIENCES (NENFPHAS) is building a vibrant community dedicated to empowering women in academia. By joining us, you&apos;ll gain access to a supportive network, opportunities for collaboration, and avenues to make a real impact through our initiatives, including sponsoring indigent doctorate students and recognizing outstanding academic achievements.
+            The Network for Nigerian Female PhD Holders in ARTS and SCIENCES (NENFPHAS) is building a vibrant community dedicated to empowering Nigerian women with Doctorate degrees in various fields of study for National development. By joining us, you'll gain access to a supportive network, opportunities for collaboration, and avenues to make a real impact through our initiatives, including sponsoring indigent doctorate students and recognizing outstanding academic achievements.
             </p>
             <p className="!text-[16px] lg:!text-[24px] !font-semibold text-white mx-auto !leading-[24px] lg:!leading-[100%] tracking-[0%]">
               Be part of something bigger.
