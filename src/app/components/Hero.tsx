@@ -39,7 +39,7 @@ export default function Hero() {
           
           {/* Subtitle */}
           <p className="max-w-[546px] !text-[20px] md:!text-[24px] !leading-[26px] md:!leading-[100%] !tracking-[0%] md:!pb-[50px] !pb-[26px] !font-light text-white">
-            Empowering Nigerian Women in Academia for National Development
+          Empowering Nigerian women with Doctorate degrees in various fields of study for National development.
           </p>
           
           {/* CTA Button */}
