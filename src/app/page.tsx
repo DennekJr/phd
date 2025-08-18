@@ -11,8 +11,8 @@ export default function Home() {
       <Hero />
       <About />
       <JoinNetwork />
-      <WhatWeDo />
       <Graphic />
+      <WhatWeDo />
       <UpcomingEvents showAllEvents={false} />
     </main>
   );
