@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: var(--font-inter);
+  font-family: 'Encode Sans', sans-serif;
   line-height: 1.6;
 }
 
