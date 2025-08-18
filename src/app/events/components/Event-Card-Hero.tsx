@@ -4,16 +4,16 @@ import YellowButton from "@/app/components/YellowButton";
 import Image from "next/image";
 
 export default function EventCardHero() {
-    const timeline = [
-        {
-            tracker: "27 June",
-            icon: "/images/events/calender-icon.svg",
-        },
-        {
-            tracker: "7PM",
-            icon: "/images/events/time-icon.svg",
-        }
-    ]
+    // const timeline = [
+    //     {
+    //         tracker: "27 June",
+    //         icon: "/images/events/calender-icon.svg",
+    //     },
+    //     {
+    //         tracker: "7PM",
+    //         icon: "/images/events/time-icon.svg",
+    //     }
+    // ]
     const handleBecomeMember = () => {
         window.location.href = "mailto:NENFPHAS@gmail.com?subject=Membership%20Enquiry&body=Hello%20NNFPHAS%2C%0D%0A%0D%0AI'd%20like%20to%20become%20a%20member.%20Please%20share%20the%20next%20steps.%0D%0A%0D%0AThank%20you.";
     };

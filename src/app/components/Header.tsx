@@ -14,7 +14,7 @@ export default function Header() {
     <header className="absolute w-full top-0 left-0 right-0 z-50">
       <nav className="w-full !py-[31.5px] !px-[20px] md:!px-[75px] flex items-center justify-between relative gap-4">
         {/* Logo */}
-        <div className="flex items-center w-full" onClick={() => router.push('/')}>
+        <div className="flex items-center w-full hover:cursor-pointer" onClick={() => router.push('/')}>
           <Image
             src={pathname.includes('/our-team') ? "/images/black-text-logo.svg" : "/images/text-logo.svg"}
             alt="NNFPHAS logo"
