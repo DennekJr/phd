@@ -14,7 +14,7 @@ export default function JoinNetwork() {
         <div className="max-w-[977px] mx-auto">
           {/* Dynamic header */}
           <div className="text-center !mb-[44px]">
-            <h2 className="!text-[24px] !leading-[100%] lg:text-[56px] font-black !mb-[44px] leading-[100%]">
+            <h2 className="!text-[24px] !leading-[100%] lg:!text-[48px] font-medium !mb-[44px] leading-[100%]">
               <span className="text-white drop-shadow-[0_4px_4px_rgba(173,0,0,0.3)]">
                 Join Our Network of Empowered Nigerian Female PhD Holders!
               </span>

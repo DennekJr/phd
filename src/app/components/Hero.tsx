@@ -23,22 +23,22 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative bottom-[200px] z-10 container mx-auto !px-[20px] md:!px-[75px] py-20">
+      <div className="relative bottom-[150px] z-10 container mx-auto !px-[20px] md:!px-[75px] py-20">
         <div className="max-w-[360px] md:max-w-[760px]">
           {/* Small heading */}
-          <p className="text-white !text-[24px] md:!text-[36px] !leading-[100%] !tracking-[0%] mb-[10px] font-medium">
+          <p className="text-white !text-[24px] md:!text-[32px] !leading-[100%] !tracking-[0%] mb-[10px] font-bold">
             Network for
           </p>
           
           {/* Main heading */}
-          <h1 className="!text-[36px] md:!text-[60px] !leading-[100%] !tracking-[0%] font-bold text-white !mb-[6px] md:!mb-[20px] leading-tight">
+          <h1 className="!text-[36px] md:!text-[60px] !leading-[80px] !tracking-[0%] font-bold text-white !mb-[6px] md:!mb-[12px]">
             Nigerian Female<br />
             PHD Holders in<br />
             <span className="uppercase">ARTS & SCIENCES</span>
           </h1>
           
           {/* Subtitle */}
-          <p className="max-w-[546px] !text-[20px] md:!text-[24px] !leading-[26px] md:!leading-[100%] !tracking-[0%] md:!pb-[50px] !pb-[26px] !font-light text-white">
+          <p className="max-w-[546px] !text-[16px] md:!text-[20px] !leading-[26px] md:!leading-[28px] !tracking-[0%] md:!pb-[50px] !pb-[26px] !font-light text-white">
           Empowering Nigerian women with Doctorate degrees in various fields of study for National development.
           </p>
           

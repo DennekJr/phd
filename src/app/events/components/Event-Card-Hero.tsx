@@ -24,12 +24,12 @@ export default function EventCardHero() {
                     &quot;Meet the Mentors&quot; Mixer
                 </h1>
                 <div className="flex items-center gap-[20px]">
-                    {timeline.map((item, index) => (
-                        <div key={index} className="flex items-center gap-[10px]">
-                            <Image src={item.icon} alt={item.tracker} width={18} height={20} />
-                            <p className="text-[#232427] text-[16px] !leading-[100%] font-semibold">{item.tracker}</p>
+                    {/* {timeline.map((item, index) => ( */}
+                        <div className="flex items-center gap-[10px]">
+                            <Image src={'/images/events/calender-icon.svg'} alt={'calender-icon'} width={18} height={20} />
+                            <p className="text-[#232427] text-[16px] !leading-[100%] font-semibold">Coming Soon</p>
                         </div>
-                    ))}
+                    {/* ))} */}
                 </div>
                 <p className="text-[#232427] !text-[16px] !leading-[24px] lg:!leading-[120%] !tracking-[0.01em] font-light text-left">
                     An evening mixer in Lekki, Lagos, offering a relaxed environment for emerging female scholars to connect with experienced PhD holders for mentorship and career advice.

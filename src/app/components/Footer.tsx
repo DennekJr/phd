@@ -72,7 +72,7 @@ export default function Footer() {
                                 disciplines, patriotism, and dedication to make our goal a success.
                             </p>
                             <p className="text-[14px] font-bold !mt-[15px]">
-                                DR. ADAEZE PATRICIA ESENYANWU (Founder & President of NNFPHAS)
+                                DR. ADAEZE PATRICIA ESENWAH (Founder & President of NENFPHAS)
                             </p>
                         </div>
                     </div>
