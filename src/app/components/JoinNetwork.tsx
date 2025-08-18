@@ -14,7 +14,7 @@ export default function JoinNetwork() {
         <div className="max-w-[977px] mx-auto">
           {/* Dynamic header */}
           <div className="text-center !mb-[44px]">
-            <h2 className="!text-[24px] !leading-[100%] lg:text-[56px] font-black !mb-[44px] leading-[100%]">
+            <h2 className="!text-[24px] !leading-[100%] lg:!text-[48px] font-medium !mb-[44px] leading-[100%]">
               <span className="text-white drop-shadow-[0_4px_4px_rgba(173,0,0,0.3)]">
                 Join Our Network of Empowered Nigerian Female PhD Holders!
               </span>
@@ -23,7 +23,7 @@ export default function JoinNetwork() {
             Are you a Nigerian woman holding a PhD in Arts or Sciences? Do you want to connect with like-minded scholars, contribute to national development, and champion academic excellence?
             </p>
             <p className="!text-[16px] lg:!text-[24px] !font-light text-white mx-auto !leading-[24px] lg:!leading-[100%] tracking-[0%] !mb-[20px]">
-            The Network for Nigerian Female PhD Holders in ARTS and SCIENCES (NENFPHAS) is building a vibrant community dedicated to empowering Nigerian women with Doctorate degrees in various fields of study for National development. By joining us, you'll gain access to a supportive network, opportunities for collaboration, and avenues to make a real impact through our initiatives, including sponsoring indigent doctorate students and recognizing outstanding academic achievements.
+            The Network for Nigerian Female PhD Holders in ARTS and SCIENCES (NENFPHAS) is building a vibrant community dedicated to empowering Nigerian women with Doctorate degrees in various fields of study for National development. By joining us, you&apos;ll gain access to a supportive network, opportunities for collaboration, and avenues to make a real impact through our initiatives, including sponsoring indigent doctorate students and recognizing outstanding academic achievements.
             </p>
             <p className="!text-[16px] lg:!text-[24px] !font-semibold text-white mx-auto !leading-[24px] lg:!leading-[100%] tracking-[0%]">
               Be part of something bigger.

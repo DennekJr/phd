@@ -87,11 +87,12 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
                             {/* Date Block */}
                             <div className="!py-[20px] lg:block hidden">
                                 <div className="bg-[#AD0000] text-white text-center w-[102px] h-[78px] flex flex-col justify-center">
-                                    <div className="text-[14px] font-medium !leading-[100%] !tracking-[0%]">{event.date.month}</div>
-                                    <div className="text-[32px] font-bold !leading-[100%] !tracking-[0%]">{event.date.day}</div>
+                                    {/* <div className="text-[14px] font-medium !leading-[100%] !tracking-[0%]">{event.date.month}</div>
+                                    <div className="text-[32px] font-bold !leading-[100%] !tracking-[0%]">{event.date.day}</div> */}
+                                    <div className="text-[20px] font-bold !leading-[100%] !tracking-[0%]">Coming</div>
                                 </div>
                                 <div className="bg-[#FDC182] text-[#000000] text-center text-[14px] font-bold !py-[10px] !px-[21px]">
-                                    {event.time}
+                                    Soon
                                 </div>
                             </div>
 
@@ -101,11 +102,12 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
                                     {event.title}
                                     <div className="lg:hidden block w-fit">
                                         <div className="bg-[#AD0000] text-white text-center w-[65px] lg:w-[102px] h-[50px] lg:h-[78px] flex flex-col justify-center">
-                                            <div className="text-[14px] font-medium !leading-[100%] !tracking-[0%]">{event.date.month}</div>
-                                            <div className="text-[20px] lg:text-[32px] font-bold !leading-[100%] !tracking-[0%]">{event.date.day}</div>
+                                            {/* <div className="text-[14px] font-medium !leading-[100%] !tracking-[0%]">{event.date.month}</div>
+                                            <div className="text-[20px] lg:text-[32px] font-bold !leading-[100%] !tracking-[0%]">{event.date.day}</div> */}
+                                            <div className="text-[20px] lg:text-[20px] font-bold !leading-[100%] !tracking-[0%]">Coming</div>
                                         </div>
                                         <div className="bg-[#FDC182] text-[#000000] text-center !text-[12px] lg:!text-[14px] font-bold !py-[5px] lg:!py-[10px] !px-[8px] lg:!px-[21px]">
-                                            {event.time}
+                                            Soon
                                         </div>
                                     </div>
                                 </h3>
