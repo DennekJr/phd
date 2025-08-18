@@ -98,10 +98,10 @@ export default function Header() {
         <Image
             src="/images/black-text-logo.svg"
             alt="NNFPHAS logo"
-            width={247}
-            height={95}
+            width={227}
+            height={90}
             priority
-            className="h-auto w-auto"
+            className="h-auto w-[75%]"
           />
           <Link href="/" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
             Home
