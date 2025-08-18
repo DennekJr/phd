@@ -31,7 +31,7 @@ export default function Hero() {
           </p>
           
           {/* Main heading */}
-          <h1 className="!text-[36px] md:!text-[60px] !leading-[80px] !tracking-[0%] font-bold text-white !mb-[6px] md:!mb-[12px]">
+          <h1 className="!text-[36px] md:!text-[60px] !leading-[40px] md:!leading-[80px] !tracking-[0%] font-bold text-white !mb-[6px] md:!mb-[12px]">
             Nigerian Female<br />
             PHD Holders in<br />
             <span className="uppercase">ARTS & SCIENCES</span>

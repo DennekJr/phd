@@ -7,9 +7,9 @@ import YellowButton from './YellowButton';
 import { useState } from 'react';
 
 export default function Header() {
-    const pathname = usePathname();
-    const router = useRouter();
-    const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="absolute w-full top-0 left-0 right-0 z-50">
       <nav className="w-full !py-[31.5px] !px-[20px] md:!px-[75px] flex items-center justify-between relative gap-4">
@@ -30,31 +30,28 @@ export default function Header() {
           <Link
             href="/"
             style={{ fontWeight: pathname === '/' ? '700' : '400' }}
-            className={`!text-[16px] !leading-[100%] !tracking-[10%] no-underline ${
-              pathname.includes('/our-team') 
-                ? '!text-[#000000] hover:text-gray-800' 
+            className={`!text-[16px] !leading-[100%] !tracking-[10%] no-underline ${pathname.includes('/our-team')
+                ? '!text-[#000000] hover:text-gray-800'
                 : '!text-[#ffffff] hover:text-gray-200'
-            }`}          >
+              }`}          >
             Home
           </Link>
           <Link
             href="/events"
             style={{ fontWeight: pathname.includes('/events') ? '700' : '400' }}
-            className={`!text-[16px] !leading-[100%] !tracking-[10%] no-underline ${
-              pathname.includes('/our-team') 
-                ? '!text-[#000000] hover:text-gray-800' 
+            className={`!text-[16px] !leading-[100%] !tracking-[10%] no-underline ${pathname.includes('/our-team')
+                ? '!text-[#000000] hover:text-gray-800'
                 : '!text-[#ffffff] hover:text-gray-200'
-            }`}          >
+              }`}          >
             Events
           </Link>
           <Link
             href="/our-team"
             style={{ fontWeight: pathname.includes('/our-team') ? '700' : '400' }}
-            className={`!text-[16px] whitespace-nowrap !leading-[100%] !tracking-[10%] no-underline ${
-              pathname.includes('/our-team') 
-                ? '!text-[#000000] hover:text-gray-800' 
+            className={`!text-[16px] whitespace-nowrap !leading-[100%] !tracking-[10%] no-underline ${pathname.includes('/our-team')
+                ? '!text-[#000000] hover:text-gray-800'
                 : '!text-[#ffffff] hover:text-gray-200'
-            }`}
+              }`}
           >
             Our Team
           </Link>
@@ -94,8 +91,8 @@ export default function Header() {
         id="mobile-menu"
         className={`md:hidden z-50 absolute left-0 right-0 top-[88px] !pb-[50px] !p-[20px] !mx-[20px] bg-white !border-t !border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
       >
-        <div className="flex flex-col gap-4 p-5">
-        <Image
+        <div className="flex items-center justify-center flex-col gap-4 p-5">
+          <Image
             src="/images/black-text-logo.svg"
             alt="NNFPHAS logo"
             width={227}
