@@ -89,16 +89,16 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
                                 <div className="bg-[#AD0000] text-white text-center w-[102px] h-[78px] flex flex-col justify-center">
                                     {/* <div className="text-[14px] font-medium !leading-[100%] !tracking-[0%]">{event.date.month}</div>
                                     <div className="text-[32px] font-bold !leading-[100%] !tracking-[0%]">{event.date.day}</div> */}
-                                    <div className="text-[20px] font-bold !leading-[100%] !tracking-[0%]">Coming</div>
+                                    <div className="text-[14px] lg:text-[20px] font-bold !leading-[100%] !tracking-[0%]">Coming</div>
                                 </div>
-                                <div className="bg-[#FDC182] text-[#000000] text-center text-[14px] font-bold !py-[10px] !px-[21px]">
+                                <div className="bg-[#FDC182] text-[#000000] text-center !text-[12px] lg:!text-[14px] font-bold !py-[10px] !px-[21px]">
                                     Soon
                                 </div>
                             </div>
 
                             {/* Event Content */}
                             <div className="flex-grow lg:!py-[20px]">
-                                <h3 className="flex w-full justify-between items-center text-[24px] lg:text-[32px] font-bold text-white !mb-[14px] !leading-[100%] !tracking-[0%]">
+                                <h3 className="flex w-full justify-between items-center text-[24px] lg:text-[32px] font-bold text-white !mb-[14px] !leading-[30px] lg:!leading-[100%] !tracking-[0%]">
                                     {event.title}
                                     <div className="lg:hidden block w-fit">
                                         <div className="bg-[#AD0000] text-white text-center w-[65px] lg:w-[102px] h-[50px] lg:h-[78px] flex flex-col justify-center">
