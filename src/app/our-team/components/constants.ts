@@ -91,7 +91,7 @@ She loves traveling, reading and discussions.  She is married with children`)
         name: "Dr. Ngozi Cordelia Agbata",
         role: "PROVOST",
         member: "Executive",
-        image: "/images/associate-founders/ngozi.jpg",
+        image: "/images/executives/ngozi-cordelia.jpeg",
         slug: "ngozi-cordelia-agbata",
         info: formatMultiLineString(`Dr. Ngozi Cordelia Agbata (Provost).
 agbatavn@gmail.com

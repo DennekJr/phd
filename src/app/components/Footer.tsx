@@ -51,7 +51,7 @@ export default function Footer() {
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="border-[2px] !gap-[31px] flex flex-col md:flex-row border-[#FDC182] w-full !max-w-[748px] !px-[13px] !py-[18px] text-[#FDC182]">
                                     <span className='font-bold whitespace-nowrap leading-[100%] text-[44px]'> © 2025</span>
-                                    <span className='text-[24px] !font-medium !leading-[100%]'>Nigerian Female PHD Holders in Arts & Sciences</span>
+                                    <span className='text-[24px] !font-medium !leading-[100%]'>Network For Nigerian Female PHD Holders in Arts & Sciences</span>
                                 </div>
                             </div>
                         </div>
@@ -62,12 +62,12 @@ export default function Footer() {
                             </div>
                             <p className="font-medium text-[14px] !leading-[130%] !tracking-[0%] max-w-[487px]">
                                 I welcome everyone to this unique Association, the Network for Nigerian
-                                Female PhD Holders in Arts and Sciences - (NNFPHAS) with great delight,
+                                Female PhD Holders in Arts and Sciences - (NENFPHAS) with great delight,
                                 especially members of the Board of Trustees and the Executive Officers. This
                                 is an Association for all to contribute towards the development of Nigeria
                                 and the upliftment of the academic status of women. I believe that,
                                 together we can make a difference to support our dear country through this
-                                platform, which is our desire. This is my team member and committee that
+                                platform, which is our desire. I have a dedicated team that
                                 will work assiduously with their diverse experiences, knowledge, and
                                 disciplines, patriotism, and dedication to make our goal a success.
                             </p>
