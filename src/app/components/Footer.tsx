@@ -45,7 +45,7 @@ export default function Footer() {
                     {/* Logo and Branding */}
                     <div className='flex flex-col-reverse xl:flex-row min-[1450px]:flex-row min-[1500px]:gap-16'>
                         <div className="!pt-[60px] xl:pt-0 !pb-[100px] xl:!pb-0 xl:!py-24 flex-1">
-                            <h1 className="!text-[60px] lg:!text-[138px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
+                            <h1 className="!text-[60px] lg:!text-[120px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
                                 NENFPHAS
                             </h1>
                             <div className="flex items-center gap-4 mb-6">
@@ -68,8 +68,8 @@ export default function Footer() {
                                 and the upliftment of the academic status of women. I believe that,
                                 together we can make a difference to support our dear country through this
                                 platform, which is our desire. I have a dedicated team that
-                                will work assiduously with their diverse experiences, knowledge, and
-                                disciplines, patriotism, and dedication to make our goal a success.
+                                will work assiduously with their diverse experiences, knowledge
+                                disciplines, and dedication to make our goal a success.
                             </p>
                             <p className="text-[14px] font-bold !mt-[15px]">
                                 DR. ADAEZE PATRICIA ESENWAH (Founder & President of NENFPHAS)

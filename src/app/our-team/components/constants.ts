@@ -37,11 +37,11 @@ Dr Sarah is an accredited adult educationist  and community development consulta
 She is the Founder and Director of Spring Valley Nursery, Primary, and High School Port Harcourt, a citadel of learning with a pristine standard, established in 2005.`)
     },
     {
-        name: "Dr. Hadiza Minna",
+        name: "Dr. Hadiza Maina",
         role: "ASSISTANT SECRETARY",
         member: "Executive",
         image: "/images/associate-founders/hadiza.jpg",
-        slug: "hadiza-minna",
+        slug: "hadiza-maina",
         info: formatMultiLineString(`Dr (Mrs) Hadiza Maina , hails from Okene, Kogi State, a Moslem. 
 She is a Development Finance Policy expert with a proven track record in policy making and implementation for enhancing micro, small, and medium enterprises (MSMEs) access to finance through strategic planning and relationship management. She is an advocate of deepening Financial Inclusion for women in Nigeria and rural rejuvenation through agriculture, guarantee programmes, brownfield development
 and other transformative projects that require significant public capital to transform the poorest of the poor at the
@@ -101,19 +101,31 @@ Dr. Agbata has BA, MA and PHD in English, Literature and Literacy studies from U
  She is currently a Director in the Anambra State Civil Service. She is a seasoned educationist for over three decades in different capacities from a class room teacher, HOD, to Vice Principal. Her passion is impacting young minds through teaching English language, Literature and literacy studies. This she did through teaching students in both senior and junior secondary schools.  She enjoys exposing the young generations, on both African and non African Literature. They invariably get to know of Classical, Neoclassical, Independent, Post independent, and Modern writers' experiences. These past experiences, events and ethos, she believes will guide young people in their future endeavours, producing great minds and future global leaders.  Dr. Agbata hails from Anambra State.`)
     },
     {
-        name: "Dr. Victoria Oladumeji",
+        name: "Dr. Victoria Oladimeji",
         role: "PRO",
         member: "Executives",
         image: "/images/associate-founders/oladumeji.jpg",
-        slug: "victoria-oladumeji",
-        info: formatMultiLineString(`Dr. Oladumeji is a Public Health Specialist. She obtained her PhD in Education  
+        slug: "victoria-oladimeji",
+        info: formatMultiLineString(`Dr. Oladimeji is a Public Health Specialist. She obtained her PhD in Education  
 from the University of Wales Cardiff United Kingdom 1992.
  Her Masters Degree in 1987and Bachelor degrees in Education in 1981 from the University of Wales. She also has a Certificate in Education  from the University of Wales and Masters Degree in Business Studies (MBA) in (1996) from the University of East London. 
 
 Career wise, she is a seasoned Lecturer in  Public Health and  Health Promotion for over 3 decades. She lectured  at the City University London  for 25 years and previously lectured at The Princess Alexandra School of Nursing  and St Bartholomew School of   Nursing and Social Sciences for 10 years. She is known for   her knowledge  and practical skills in  the
  application  of complex theories into practice.
 Her passion and enthusiasm for innovation and compassionate teaching skills transformed her into an outstanding Lecturer. 
-Dr. Oladumeji is from Osun state, married with children`)
+Dr. Oladimeji is from Osun state, married with children`)
+    },
+    {
+        name: "Dr. Obiamaka Clara Itanyi",
+        role: "PRO 2 and IT MANAGER",
+        image: "/images/executives/obiamaka.jpeg",
+        slug: "itanyi-obiamaka",
+        member: "Executive",
+        info: formatMultiLineString(`Dr. Obiamaka Clara Itanyi
+(PRO 2 and IT mgr)
+
+Dr. Obiamaka Clara Itanyi is a distinguished scholar with a PhD in Conflict, Peace, and Strategic Studies. Her expertise is in analyzing complex conflicts, developing strategic solutions, and fostering peacebuilding initiatives. Her research focuses on the impact of the ideology of the indigenous people of Biafra on socioeconomic and political development in Southeast Nigeria. She has published  in top-tier academic journals. She also has a strong background in research design, data analysis, and policy development. She provides insightful recommendations to stakeholders, policymakers, and organizations. Her goal is to contribute to the advancement of knowledge and practice in conflict resolution, peacebuilding, and strategic studies. Key areas of expertise include 1. Conflict Analysis and Resolution. 2. Peacebuilding and Post-Conflict Reconstruction. 3. Strategic Planning and Policy Development. 4. Research Design and Methodology.
+Dr. Itanyi hails from Enugu State.`)
     }
 ];
 
@@ -254,9 +266,7 @@ export const BoardOfTrusteesMembers = [
         member: "Board of Trustees",
         image: "/images/board-of-trustees/vicky-sylvester.jpg",
         slug: "vicky-sylvester-2",
-        info: formatMultiLineString(`Dr (Mrs) Oluyemisi Yetunde Olukoya
-
-            Dr. Olukoya is a seasoned Agricultural Economist and Development Finance specialist of over three decades.  She is currently interested socio-economic issues, particularly poverty alleviation, economic empowerment  and capacity building. 
+        info: formatMultiLineString(`Dr (Mrs) Oluyemisi Yetunde Olukoya is a seasoned Agricultural Economist and Development Finance specialist of over three decades.  She is currently interested socio-economic issues, particularly poverty alleviation, economic empowerment  and capacity building. 
 
             She obtained her  B.Sc and M.Phil in Plant Science from the University of Ife now Obafemi Awolowo University, Ile Ife and her Ph.D in Agricultural Economics from the University of Oklahoma, United States of America. 
 

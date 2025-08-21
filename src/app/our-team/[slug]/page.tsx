@@ -98,7 +98,7 @@ export default async function TeamMemberPage({ params }: { params: Promise<{ slu
                             <h1 className="text-[24px] !leading-[100%] font-bold text-[#232427] !mb-4">
                                 {member.name}
                             </h1>
-                            <div className="!mb-4 text-[20px] !font-bold !leading-[100%] !text-[#AD0000]">Member, {member.member}</div>
+                            <div className="!mb-4 text-[14px] !font-bold !leading-[100%] !text-[#AD0000]">{member.role}</div>
                         </div>
 
                         <div className="prose prose-lg max-w-none">
