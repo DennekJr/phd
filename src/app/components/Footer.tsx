@@ -68,8 +68,8 @@ export default function Footer() {
                                 and the upliftment of the academic status of women. I believe that,
                                 together we can make a difference to support our dear country through this
                                 platform, which is our desire. I have a dedicated team that
-                                will work assiduously with their diverse experiences, knowledge, and
-                                disciplines, patriotism, and dedication to make our goal a success.
+                                will work assiduously with their diverse experiences, knowledge
+                                disciplines, and dedication to make our goal a success.
                             </p>
                             <p className="text-[14px] font-bold !mt-[15px]">
                                 DR. ADAEZE PATRICIA ESENWAH (Founder & President of NENFPHAS)

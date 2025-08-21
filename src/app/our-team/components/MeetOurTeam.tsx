@@ -41,6 +41,7 @@ export default function MeetOurTeam() {
                     </div>
                     <div className='flex flex-col gap-[26px]'>
                         <h3 className='!text-[24px] font-bold !text-[#232427] !leading-[100%]'>Dr. Ada Esenwah</h3>
+                        <h3 className='!text-[14px] font-bold !text-[#880C24] !leading-[0%]'>Founder/President</h3>
                         <p className='!text-[16px] font-light !text-[#454545] !leading-[30px]'>Dr. Ada Esenwah is a distinguished Socio-economic Policy Analyst with a strong focus on socio-economic growth in developing countries, particularly Nigeria. Her work emphasizes youth and women empowerment and poverty reduction, stemming from her doctoral research on &quot;Youth Poverty Reduction in Nigeria: Policy Perspective.&quot; She is also an accomplished author, editor, and organizer of national and international seminars and conferences.</p>
                         <p className='!text-[24px] font-bold !text-[#454545] !leading-[24px]'>Experience</p>
                         <div className='flex flex-col gap-[16px]'>
