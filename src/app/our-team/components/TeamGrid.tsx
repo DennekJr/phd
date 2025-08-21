@@ -75,10 +75,10 @@ export default function TeamGrid({ title, description, members, scribbleImage, c
                             
                             {/* Name */}
                             <div className="!px-[20px] !pt-[34px] !pb-[44px]">
-                                <h3 className="!text-[18px] text-[#232427] leading-[100%]">
+                                <h3 className="!text-[18px] text-[#232427] leading-[100%] truncate">
                                     {member.name}
                                 </h3>
-                                <p className="!text-[14px] !pt-[10px] uppercase font-bold !text-[#454545] !leading-[100%] !tracking-[0%]">
+                                <p className="!text-[14px] !pt-[10px] uppercase font-bold !text-[#454545] !leading-[100%] !tracking-[0%] truncate">
                                     {member.role}
                                 </p>
                             </div>

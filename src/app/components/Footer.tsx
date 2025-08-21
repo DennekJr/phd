@@ -45,7 +45,7 @@ export default function Footer() {
                     {/* Logo and Branding */}
                     <div className='flex flex-col-reverse xl:flex-row min-[1450px]:flex-row min-[1500px]:gap-16'>
                         <div className="!pt-[60px] xl:pt-0 !pb-[100px] xl:!pb-0 xl:!py-24 flex-1">
-                            <h1 className="!text-[60px] lg:!text-[138px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
+                            <h1 className="!text-[60px] lg:!text-[120px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
                                 NENFPHAS
                             </h1>
                             <div className="flex items-center gap-4 mb-6">
