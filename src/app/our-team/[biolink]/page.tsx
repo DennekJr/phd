@@ -57,8 +57,8 @@ export default async function BioDesign({
   }
   return (
     <div className="relative !py-[140px] md:!pt-[182px] max-w-[1728px]">
-      <div className="flex items-start justify-center !mx-auto h-auto">
-        <div className="flex flex-col flex-1  items-center justify-end ">
+      <div className="flex relative flex-col md:flex-row items-start justify-center !mx-auto h-auto">
+        <div className="relative flex flex-col flex-1  items-center  ">
           <Image
             src={members.src}
             alt={members.fullName}
@@ -66,7 +66,7 @@ export default async function BioDesign({
             height={660}
             className="w-[645px] h-[660px] object-top object-cover"
           />
-          <Link href="/our-team" className=" flex items-center gap-[8px]">
+          <Link href="/our-team" className=" flex  gap-[8px]">
             <svg
               width="36"
               height="36"
@@ -83,7 +83,7 @@ export default async function BioDesign({
             <h3 className="text-[#AD0000] text-[20px]">Back</h3>
           </Link>
         </div>
-        <div className="flex-1 h-auto !pr-[66px] !space-y-2">
+        <div className="flex-1 h-auto !px-4 md:!pr-[66px] !space-y-2">
           <h1 className="font-bold text-[24px]">{members.fullName}</h1>
           <h2 className="text-[#AD0000] font-bold">{members.role}</h2>
           <p className="leading-9 font-regular">{members.biodata}</p>

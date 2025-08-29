@@ -11,7 +11,9 @@ export default function EventCardHero() {
         <p className="text-[16px] text-left !font-light !leading-[100%] !mb-[20px]">
           Join now to get updates on when we have events{" "}
         </p>
-        <YellowButton className="w-full">BECOME A MEMBER</YellowButton>
+        <YellowButton className="w-full whitespace-nowrap">
+          BECOME A MEMBER
+        </YellowButton>
       </div>
       <div className=" order-first md:order-last !px-[30px]">
         <Image
