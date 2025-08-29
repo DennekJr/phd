@@ -55,7 +55,7 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="/noevents"
+            href="/events"
             style={{
               fontWeight: pathname === "/events" ? "700" : "400",
               color: isTeamPage ? "#000000" : "#ffffff",
@@ -107,18 +107,18 @@ export default function Header() {
         </button>
         <div
           id="mobile-menu"
-          className={`md:hidden absolute left-0 right-0 top-[88px] mx-auto bg-white border-t border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${
+          className={`md:hidden absolute  left-0 right-0 top-[1px] mx-auto bg-white border-t border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${
             isOpen ? "scale-y-100" : "scale-y-0"
           }`}
         >
-          <div className="flex flex-col gap-4 p-5">
+          <div className="flex flex-col gap-4 !p-4">
             <Image
               src="/images/black-text-logo.svg"
               alt="NNFPHAS logo"
-              width={247}
-              height={95}
+              width={56}
+              height={56}
               priority
-              className="h-auto w-auto"
+              className="w-[200px] !mb-[20px]"
             />
             <Link
               href="/"

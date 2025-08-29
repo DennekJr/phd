@@ -52,7 +52,7 @@ export default function TeamGrid({ headings, members }: TeamGridProps) {
                 </div>
               </div>
               {/* Grid */}
-              <div className="grid grid-cols-2 lg:grid-cols-3  gap-2 md:gap-6 ">
+              <div className="grid grid-cols-1  lg:grid-cols-3  gap-2 md:gap-6 ">
                 {members.map((member, ind) => (
                   <Link
                     href={`/our-team/${member.biolink}`}

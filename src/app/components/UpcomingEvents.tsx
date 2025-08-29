@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import YellowButton from "./YellowButton";
 
 export default function UpcomingEvents({
@@ -72,8 +73,8 @@ export default function UpcomingEvents({
         {/* Header */}
         {!showAllEvents && (
           <div className="w-full relative">
-            <div className="text-center !mb-[182px]">
-              <p className="text-white !text-[16px] md:!text-[24px] font-light mb-4 md:!leading-[100%] !leading-[120%] !tracking-[0%]">
+            <div className="text-center !mb-[92px] md:!mb-[182px]">
+              <p className="text-white !text-[16px] md:!text-[24px] font-light mb-4 md:!leading-12 !leading-[120%] !tracking-[0%]">
                 Discover the exciting events and opportunities we have planned.
               </p>
               <h2 className=" !text-[24px] md:!text-[48px] font-bold text-[#FDC182] md:!leading-[100%] !leading-[200%] !tracking-[0%]">
@@ -169,9 +170,11 @@ export default function UpcomingEvents({
         {/* See All Events Button */}
         {!showAllEvents && (
           <div className="text-center !mt-[135px]">
-            <button className="border-[2px] hover:cursor-pointer border-white text-white !px-[70px] !py-[20px] rounded-[4px] font-bold text-[16px] hover:bg-white hover:text-[#2A2A2A] transition-colors duration-300">
-              SEE ALL EVENTS
-            </button>
+            <Link href="./events">
+              <button className="border-[2px] hover:cursor-pointer border-white text-white !px-[70px] !py-[20px] rounded-[4px] font-bold text-[16px] hover:bg-white hover:text-[#2A2A2A] transition-colors duration-300">
+                SEE ALL EVENTS
+              </button>
+            </Link>
           </div>
         )}
       </div>
