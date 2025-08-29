@@ -1,4 +1,4 @@
-import YellowButton from './YellowButton';
+import YellowButton from "./YellowButton";
 
 export default function JoinNetwork() {
   return (
@@ -14,26 +14,34 @@ export default function JoinNetwork() {
         <div className="absolute top-1/2 left-1/4 w-72 h-72 bg-pink-500/30 rounded-full blur-[100px] animate-pulse delay-500"></div> */}
       </div>
 
-      <div className="relative max-w-[1920px] mx-auto !px-[76px] !py-[116px]">
+      <div className="relative max-w-[1920px] mx-auto !px-[24px] !py-[45px] lg:!px-[76px] lg:!py-[116px]">
         <div className="max-w-[977px] mx-auto">
           {/* Dynamic header */}
           <div className="text-center !mb-[44px]">
-            <h2 className="text-[56px] font-black !mb-[44px] leading-[100%]">
+            <h2 className="text-[24px] lg:text-[56px] font-semibold !mb-[44px] leading-[120%]">
               <span className="text-white drop-shadow-[0_4px_4px_rgba(173,0,0,0.3)]">
                 Join Our Network of Empowered Nigerian Female PhD Holders!
               </span>
             </h2>
-            <p className="!text-[24px] !font-light text-white mx-auto !leading-[100%] tracking-[0%] !mb-[20px]">
-              Are you a Nigerian woman holding a PhD in Arts or Sciences? Do you want to connect with like-minded scholars, contribute to national development, and champion academic excellence?
+            <p className="lg:!text-[24px] !text-[16px] !font-light text-white mx-auto !leading-[150%] tracking-[0%] !mb-[20px]">
+              Are you a Nigerian woman holding a PhD in Arts or Sciences? Do you
+              want to connect with like-minded scholars, contribute to national
+              development, and champion academic excellence?
             </p>
-            <p className="!text-[24px] !font-light text-white mx-auto !leading-[100%] tracking-[0%] !mb-[20px]">
-              The Network for Nigerian Female PhD Holders in ARTS and SCIENCES (NENFPHAS) is building a vibrant community dedicated to empowering women in academia. By joining us, you'll gain access to a supportive network, opportunities for collaboration, and avenues to make a real impact through our initiatives, including sponsoring indigent doctorate students and recognizing outstanding academic achievements.
+            <p className="lg:!text-[24px] !text-[16px] !font-light text-white mx-auto !leading-[150%] tracking-[0%] !mb-[20px]">
+              The Network for Nigerian Female PhD Holders in ARTS and SCIENCES
+              (NENFPHAS) is building a vibrant community dedicated to empowering
+              women in academia. By joining us, you'll gain access to a
+              supportive network, opportunities for collaboration, and avenues
+              to make a real impact through our initiatives, including
+              sponsoring indigent doctorate students and recognizing outstanding
+              academic achievements.
             </p>
-            <p className="!text-[24px] !font-semibold text-white mx-auto !leading-[100%] tracking-[0%]">
+            <p className="md:!text-[24px] !text-[16px]  !font-semibold text-white mx-auto !leading-[100%] tracking-[0%]">
               Be part of something bigger.
             </p>
           </div>
-          <div className='flex justify-center drop-shadow-[0_8px_16px_rgba(96,97,112,0.16)] drop-shadow-[0_2px_4px_rgba(40,41,61,0.04)]'>
+          <div className="flex justify-center drop-shadow-[0_8px_16px_rgba(96,97,112,0.16)] drop-shadow-[0_2px_4px_rgba(40,41,61,0.04)]">
             <YellowButton>
               <span className="flex items-center gap-2 text-lg font-bold">
                 JOIN NOW
@@ -44,4 +52,4 @@ export default function JoinNetwork() {
       </div>
     </section>
   );
-} 
+}

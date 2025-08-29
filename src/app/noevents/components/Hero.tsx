@@ -3,7 +3,7 @@ import EventCardHero from "./Event-Card-Hero";
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-end w-full min-h-[924px] overflow-hidden !pb-[120px]">
+    <section className="relative flex flex-col items-center justify-end w-full min-h-[924px] overflow-hidden !pb-[120px] !pt-[151px]">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Content Overlay */}
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="text-center text-white">
-          <h1 className="text-5xl md:text-[48px] !text-[#FDC182] font-bold !mb-[100px] flex items-center justify-center !gap-[19px]">
+          <h1 className="text-4xl md:text-[48px] !text-[#FDC182] font-bold !mb-[100px] flex items-center justify-center md:!gap-[19px] !gap-[10px] ">
             Featured Events{" "}
             <span>
               <Image
@@ -35,21 +35,8 @@ export default function Hero() {
               />
             </span>
           </h1>
-          <EventCardHero />
-          <div className="flex items-center justify-center gap-[12px] !mt-[31px]">
-            <span className="flex items-center justify-center gap-[10px]">
-              <Image
-                src="/images/events/location-icon.svg"
-                alt="Events hero background"
-                width={19}
-                height={25}
-                className="object-contain w-auto h-auto"
-              />
-            </span>
-            <span className="text-[24px] !leading-[100%] !tracking-[0.01em]">
-              The Podium, 124 T. F. Kuboye Rd, Lekki Phase I, Lekki 106104,
-              Lagos
-            </span>
+          <div className="!px-[15px]">
+            <EventCardHero />
           </div>
         </div>
       </div>
