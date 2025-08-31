@@ -26,11 +26,11 @@ export default function Hero() {
     },
   ];
   return (
-    <section className="relative !bg-[#ffffff] !py-[140px] md:!py-[182px]">
-      <div className="relative mx-auto !mt-[px] !mb-[62px] md:!pl-[75px]  md:!pr-[197px]">
-        <div className="!mb-[50px] md:!mb-[137px] !px-[50px]">
+    <section className="relative !bg-[#ffffff] !py-[150px] lg:!py-[182px]">
+      <div className="relative mx-auto !mt-[px] !mb-[62px] lg:!pl-[75px]  lg:!pr-[197px]">
+        <div className="!mb-[50px] lg:!mb-[137px] !px-[50px]">
           <div className="w-full flex f justify-center gap-4">
-            <h1 className="text-[24px] md:text-[48px] font-bold text-[#232427] leading-[100%]">
+            <h1 className="text-[24px] lg:text-[48px] font-bold text-[#232427] leading-[100%]">
               Meet our team
             </h1>
             <Image
@@ -38,29 +38,29 @@ export default function Hero() {
               alt="heart image"
               width={45}
               height={57}
-              className="object-cover w-[30px] h-[38px] md:w-[45px] md:h-[57px]"
+              className="object-cover w-[30px] h-[38px] lg:w-[45px] lg:h-[57px]"
               priority
             />
           </div>
-          <p className="text-center font-light text-[16px] md:text-[24px] text-[#454545]">
+          <p className="text-center font-light text-[16px] lg:text-[24px] text-[#454545]">
             Get to know the dedicated individuals who drive the mission of
             NENFPHAS
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 items-stretch ">
+        <div className="flex flex-col lg:flex-row gap-4 items-stretch ">
           {/* only visible for mobile view */}
           <div className="inline-block ">
-            <span className="text-[#000000] font-bold text-[24px] !leading-[100%] !tracking-[0%] !mx-[28px] md:hidden ">
+            <span className="text-[#000000] font-bold text-[16px] !leading-[100%] !tracking-[0%] !mx-[28px] lg:hidden ">
               Dr. Ada Esenwah
             </span>
           </div>
           {/* Dynamic Images Grid */}
-          <div className="relative  w-full h-full flex justify-center">
+          <div className="relative  w-full h-full flex justify-center md:justify-start lg:justify-center md:!pl-[28px]">
             <div
               className="group relative w-full  max-w-[343px] h-[351px] lg:max-w-[645px] lg:h-[660px] bg-cover bg-center"
               style={{ backgroundImage: `url(${image.src})` }}
             >
-              <div className="absolute bg-white !p-[9px] !m-[20px] md:!p-[15px] md:!m-[40px] font-bold rounded-[3px] !text-[10px] md:!text-[16px]">
+              <div className="absolute bg-white !p-[9px] !m-[20px] lg:!p-[15px] lg:!m-[40px] font-bold rounded-[3px] !text-[10px] lg:!text-[16px]">
                 CEO & PRESIDENT
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function Hero() {
           <div className="relative justify-start gap-[26px] !mx-[28px] ">
             {/* only visible for desktop view */}
             <div className="inline-block ">
-              <span className="text-[#000000] font-bold text-[24px] !leading-[100%] !tracking-[0%]  hidden md:inline-block">
+              <span className="text-[#000000] font-bold text-[24px] !leading-[100%] !tracking-[0%]  hidden lg:inline-block">
                 Dr. Ada Esenwah
               </span>
             </div>
@@ -86,7 +86,7 @@ export default function Hero() {
             </p>
 
             <div className="!space-y-[20px]">
-              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-[#000000] font-bold text-[16px] md:text-[24px] !leading-16 !tracking-[0%]">
+              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-[#000000] font-bold text-[16px] lg:text-[24px] !leading-16 !tracking-[0%]">
                 Experience
               </span>
               {experience.map((item, i) => (

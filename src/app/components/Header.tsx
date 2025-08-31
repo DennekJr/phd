@@ -14,10 +14,11 @@ export default function Header() {
 
   return (
     <header className="absolute w-full top-0 left-0 right-0 z-50 ">
-      <nav className="w-full !py-[31.5px] !px-[20px] md:!px-[75px] md:!px-[75x] flex items-center justify-between relative gap-20 md:gap-6">
+      {/* Navigation container - 28px padding for mobile/tablet, 75px for desktop */}
+      <nav className="w-full !py-[31.5px] !px-[28px] lg:!px-[75px] flex items-center justify-between relative gap-20 md:gap-6">
         {/* Logo */}
         <div
-          className="flex items-center w-full"
+          className="flex items-center w-full relative z-50"
           onClick={() => router.push("/")}
         >
           <div className="flex flex-col md:flex-row items-center">
@@ -33,7 +34,7 @@ export default function Header() {
               <p
                 className="font-black text-[17px] md:text-[28px] !p-[2px] md:!p-[10px]"
                 style={{
-                  color: isTeamPage ? "#000000" : "#ffffff",
+                  color: isTeamPage || isOpen ? "#000000" : "#ffffff",
                 }}
               >
                 NENPHAS
@@ -42,8 +43,8 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Navigation Menu (centered) */}
-        <div className="md:flex hidden items-center text-white !space-x-[61px] justify-center w-full ">
+        {/* Desktop Navigation Menu - Hidden on mobile/tablet, visible on desktop */}
+        <div className="lg:flex hidden items-center text-white !space-x-[61px] justify-center w-full ">
           <Link
             href="/"
             style={{
@@ -76,16 +77,16 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* JOIN US Button */}
-        <div className="md:flex hidden w-full justify-end">
+        {/* Desktop Contact Button - Hidden on mobile/tablet, visible on desktop */}
+        <div className="lg:flex hidden w-full justify-end">
           <a href="mailto:samuelidakwo99@gmail.com?subject=Contact%20Us&body=Hi%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20you.">
             <YellowButton>CONTACT US</YellowButton>
           </a>
         </div>
 
-        {/* Mobile menu button */}
+        {/* Mobile/Tablet Menu Button - Visible on mobile/tablet, hidden on desktop */}
         <button
-          className="md:hidden flex items-center"
+          className="lg:hidden flex items-center relative z-50"
           onClick={() => setIsOpen((open) => !open)}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
@@ -105,39 +106,33 @@ export default function Header() {
             />
           </svg>
         </button>
+        {/* Mobile/Tablet Menu Dropdown - Overlaps header, positioned below */}
         <div
           id="mobile-menu"
-          className={`md:hidden absolute  left-0 right-0 top-[1px] mx-auto bg-white border-t border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${
+          className={`lg:hidden absolute  left-0 right-0 top-[1px] mx-auto bg-white border-t border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 z-40 ${
             isOpen ? "scale-y-100" : "scale-y-0"
           }`}
         >
-          <div className="flex flex-col gap-4 !p-4">
-            <Image
-              src="/images/black-text-logo.svg"
-              alt="NNFPHAS logo"
-              width={56}
-              height={56}
-              priority
-              className="w-[200px] !mb-[20px]"
-            />
+          {/* Menu content with 28px horizontal padding to align with header */}
+          <div className="flex flex-col gap-4 !p-4 !pt-36 !px-[28px]">
             <Link
               href="/"
               onClick={() => setIsOpen(false)}
-              className="text-[18px] font-medium text-[#232427]"
+              className="text-[18px] font-medium text-[#232427] py-2"
             >
               Home
             </Link>
             <Link
               href="/noevents"
               onClick={() => setIsOpen(false)}
-              className="text-[18px] font-medium text-[#232427]"
+              className="text-[18px] font-medium text-[#232427] py-2"
             >
               Events
             </Link>
             <Link
               href="/our-team"
               onClick={() => setIsOpen(false)}
-              className="text-[18px] font-medium text-[#232427]"
+              className="text-[18px] font-medium text-[#232427] py-2"
             >
               Our Team
             </Link>

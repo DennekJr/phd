@@ -44,11 +44,11 @@ export default function Footer() {
           {/* Left Side - Brand and Content */}
           {/* Logo and Branding */}
           <div className="relative order-3 lg:order-1 lg:!py-24 !py-12">
-            <h1 className="text-[40px] lg:text-[138px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
-              NNFPHAS
+            <h1 className="text-[60px] md:text-[40px] lg:text-[138px] font-semibold leading-[100%] !mb-4 text-[#FDC182]">
+              NENFPHAS
             </h1>
             <div className="flex items-center gap-4 mb-6">
-              <div className="border-[2px] !gap-[31px] flex border-[#FDC182] !max-w-[642px] !px-[13px] !py-[18px] text-[#FDC182]">
+              <div className="border-[2px] !gap-[31px] flex flex-col lg:flex-row border-[#FDC182] !max-w-[642px] !px-[13px] !py-[18px] text-[#FDC182]">
                 <span className="font-bold whitespace-nowrap leading-[100%] text-[44px]">
                   {" "}
                   © 2025
@@ -138,28 +138,54 @@ export default function Footer() {
               <p className="!text-[16px] text-[#FDC182] font-medium !mb-[15px]">
                 (Connect with us)
               </p>
-              <p>+234 01 1223 3445</p>
 
               {/* Social Media Icons */}
-              <div className="flex gap-4 justify-end">
-                {/* YouTube */}
-                {/* <a
-                                    href="#"
-                                    className="w-[42px] h-[30px] rounded flex items-center justify-center hover:bg-red-700 transition-colors duration-300"
-                                    aria-label="YouTube"
-                                >
-                                    <Image src="/images/footer/youtube.svg" alt="YouTube" width={42} height={30} />
-                                </a> */}
+              <div className="flex flex-col gap-2 lg:gap-4 lg:justify-end">
+                {/* Email */}
+                <div className="flex items-center gap-2 lg:justify-end">
+                  <span className="text-white text-[16px] order-2 lg:order-1">
+                    NENFPHAS@gmail.com
+                  </span>
+                  <a
+                    href="mailto:NENFPHAS@gmail.com"
+                    className="w-[36px] h-[36px] rounded flex items-center justify-center hover:bg-gray-800 transition-colors duration-300 order-1 lg:order-2"
+                    aria-label="Email"
+                  >
+                    <svg
+                      className="w-24 h-24 text-white"
+                      fill="#FDC182"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                  </a>
+                </div>
 
-                {/* Twitter/X */}
-                {/* <a
-                                    href="#"
-                                    className="w-[40px] h-[40px] rounded flex items-center justify-center hover:bg-gray-800 transition-colors duration-300"
-                                    aria-label="Twitter/X"
-                                >
-                                    <Image src="/images/footer/twitter.svg" alt="Twitter" width={40} height={40} />
-                                </a> */}
-                {/* Phone number */}
+                {/* Phone */}
+                <div className="flex items-center gap-2 lg:justify-end">
+                  <span className="text-white text-[16px] order-2 lg:order-1">
+                    08162375044
+                  </span>
+                  <a
+                    href="tel:08162375044"
+                    className="w-[36px] h-[36px] rounded flex items-center justify-center hover:bg-gray-800 transition-colors duration-300 order-1 lg:order-2"
+                    aria-label="Phone"
+                  >
+                    <svg
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.75 4.25C5.75 3.00736 6.75736 2 8 2H16C17.2426 2 18.25 3.00736 18.25 4.25V19.75C18.25 20.9926 17.2426 22 16 22H8C6.75736 22 5.75 20.9926 5.75 19.75V4.25ZM10.25 18.25C10.25 18.6642 10.5858 19 11 19H13C13.4142 19 13.75 18.6642 13.75 18.25C13.75 17.8358 13.4142 17.5 13 17.5H11C10.5858 17.5 10.25 17.8358 10.25 18.25Z"
+                        fill="#FDC182"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

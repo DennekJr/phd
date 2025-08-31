@@ -26,33 +26,33 @@ interface TeamGridProps {
 
 export default function TeamGrid({ headings, members }: TeamGridProps) {
   return (
-    <section className="relative bg-[#FBF7ED]  ">
+    <section className="relative bg-[#FBF7ED] !pb-20">
       <div className=" max-w-[1700px] !mx-auto">
-        <div className=" !px-[9px] md:!px-[207.5px] !pt-[68.9px]  md:!py-[112px] ">
+        <div className=" !px-[9px] lg:!px-[207.5px] !pt-[68.9px]  md:!py-[112px] ">
           <div className="">
             {/* Heading */}
             <div className=" ">
               <div className=" items-center justify-center w-full ]">
-                <div className="flex w-full items-center justify-center md:justify-start ">
+                <div className="flex w-full items-center justify-center lg:justify-start ">
                   <Image
                     src={headings.decorativeImage}
                     alt="kkkkk"
                     width={271}
                     height={45}
-                    className="w-[120px] md:w-[271px] "
+                    className="w-[120px] lg:w-[271px] "
                   />
                 </div>
-                <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left md:justify-between !pb-[70px] gap-2">
-                  <h1 className=" text-[16px] md:text-[32px] font-bold grow !pr-[50px]">
+                <div className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left lg:justify-between !pb-[70px] gap-2">
+                  <h1 className=" text-[16px] lg:text-[32px] font-bold grow lg:!pr-[50px]">
                     {headings.title}
                   </h1>
-                  <h2 className="text-[16px] md:text-[20px] font-light md:font-semibold ">
+                  <h2 className="text-[16px] lg:text-[20px] font-light lg:font-semibold ">
                     {headings.description}
                   </h2>
                 </div>
               </div>
               {/* Grid */}
-              <div className="grid grid-cols-1  lg:grid-cols-3  gap-2 md:gap-6 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-6 ">
                 {members.map((member, ind) => (
                   <Link
                     href={`/our-team/${member.biolink}`}
@@ -68,7 +68,7 @@ export default function TeamGrid({ headings, members }: TeamGridProps) {
                         className=" w-full md:w-[412px]  h-[377px] object-cover object-top"
                       />
                     </div>
-                    <div className="!px-[20px] !pt-[34px] !pb-[24px] !pb-[44px] text-[12px] md:text-[16px]">
+                    <div className="!px-[10px] md:!px-[20px] !pt-[20px] md:!pt-[34px] !pb-[20px] md:!pb-[24px] md:!pb-[44px] text-[16px]">
                       <p className=" ">
                         {member.fullName} <br />
                         <span className="font-bold">{member.role}</span>

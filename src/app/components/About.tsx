@@ -38,7 +38,7 @@ export default function About() {
     },
   ];
   return (
-    <section className="relative !bg-[#ffffff] md:!px-[76px] !px-[10px] !py-[36px] lg:!py-[127px]">
+    <section className="relative !bg-[#ffffff] !pl-[36px] !pr-[26px] md:!px-[76px] !py-[36px] lg:!py-[127px]">
       <div className="relative mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Dynamic Images Grid */}
@@ -146,26 +146,29 @@ export default function About() {
         </div>
       </div>
       <div className="flex flex-col gap-[20px]">
+        {/* Branch image - Hidden on mobile/tablet, visible on desktop */}
         <Image
           src={"/images/about/branch.svg"}
           alt="Branch image"
           width={180}
           height={244}
-          className="object-cover absolute top-[267px] right-0 lg:flex hidden"
+          className="object-cover absolute top-[267px] right-0 lg:block hidden"
         />
+        {/* Flag image - Responsive positioning and sizing */}
         <Image
           src={"/images/about/flag.svg"}
           alt="Flag image"
           width={144}
           height={148}
-          className="object-cover absolute bottom-[143px] right-[950px] "
+          className="object-cover absolute w-[80px] h-[80px] md:w-[100px] md:h-[100px] lg:w-[144px] lg:h-[148px] bottom-[260px] md:bottom-[234px] lg:bottom-[143px] right-[10px] md:right-[50px] lg:right-[950px]"
         />
+        {/* Flower image - Responsive positioning and sizing */}
         <Image
           src={"/images/about/flower.svg"}
           alt="Flower image"
           width={144}
           height={145}
-          className="object-cover absolute top-[57px] left-0 lg:flex hidden"
+          className="object-cover absolute w-[80px] h-[80px] md:w-[100px] md:h-[100px] lg:w-[144px] lg:h-[145px] top-[247px] md:top-[234px] lg:top-[57px] left-[10px] md:left-[20px] lg:left-0"
         />
       </div>
     </section>

@@ -56,36 +56,48 @@ export default async function BioDesign({
     return;
   }
   return (
-    <div className="relative !py-[140px] md:!pt-[182px] max-w-[1728px]">
+    <div className="relative !py-[157px] md:!pt-[182px] max-w-[1728px] !px-[29px]  md:px-0">
       <div className="flex relative flex-col md:flex-row items-start justify-center !mx-auto h-auto">
-        <div className="relative flex flex-col flex-1  items-center  ">
-          <Image
-            src={members.src}
-            alt={members.fullName}
-            width={645}
-            height={660}
-            className="w-[645px] h-[660px] object-top object-cover"
-          />
-          <Link href="/our-team" className=" flex  gap-[8px]">
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 25 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              transform="rotate(0 0 0)"
-            >
-              <path
-                d="M3.57813 12.4981C3.5777 12.6905 3.65086 12.8831 3.79761 13.0299L9.7936 19.0301C10.0864 19.3231 10.5613 19.3233 10.8543 19.0305C11.1473 18.7377 11.1474 18.2629 10.8546 17.9699L6.13418 13.2461L20.3295 13.2461C20.7437 13.2461 21.0795 12.9103 21.0795 12.4961C21.0795 12.0819 20.7437 11.7461 20.3295 11.7461L6.14168 11.7461L10.8546 7.03016C11.1474 6.73718 11.1473 6.2623 10.8543 5.9695C10.5613 5.6767 10.0864 5.67685 9.79362 5.96984L3.84392 11.9233C3.68134 12.0609 3.57812 12.2664 3.57812 12.4961L3.57813 12.4981Z"
-                fill="#AD0000"
-              />
-            </svg>
-            <h3 className="text-[#AD0000] text-[20px]">Back</h3>
-          </Link>
+        <div className="relative flex flex-col w-full md:flex-1  items-center">
+          <div className="w-full md:hidden !mb-5">
+            <h1 className="font-bold text-base mb-[6px]">{members.fullName}</h1>
+            <h2 className="text-[#AD0000] font-bold">{members.role}</h2>
+          </div>
+          <div className="w-full flex justify-center !mb-[27px] md:mb-0">
+            <Image
+              src={members.src}
+              alt={members.fullName}
+              width={645}
+              height={660}
+              className="w-full h-auto object-top object-cover max-w-[645px] max-h-[660px]"
+            />
+          </div>
+          <div className="w-full flex justify-start hidden md:flex max-w-[645px]">
+            <Link href="/our-team" className=" flex  gap-[8px]">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                transform="rotate(0 0 0)"
+              >
+                <path
+                  d="M3.57813 12.4981C3.5777 12.6905 3.65086 12.8831 3.79761 13.0299L9.7936 19.0301C10.0864 19.3231 10.5613 19.3233 10.8543 19.0305C11.1473 18.7377 11.1474 18.2629 10.8546 17.9699L6.13418 13.2461L20.3295 13.2461C20.7437 13.2461 21.0795 12.9103 21.0795 12.4961C21.0795 12.0819 20.7437 11.7461 20.3295 11.7461L6.14168 11.7461L10.8546 7.03016C11.1474 6.73718 11.1473 6.2623 10.8543 5.9695C10.5613 5.6767 10.0864 5.67685 9.79362 5.96984L3.84392 11.9233C3.68134 12.0609 3.57812 12.2664 3.57812 12.4961L3.57813 12.4981Z"
+                  fill="#AD0000"
+                />
+              </svg>
+              <h3 className="text-[#AD0000] text-[20px]">Back</h3>
+            </Link>
+          </div>
         </div>
         <div className="flex-1 h-auto !px-4 md:!pr-[66px] !space-y-2">
-          <h1 className="font-bold text-[24px]">{members.fullName}</h1>
-          <h2 className="text-[#AD0000] font-bold">{members.role}</h2>
+          <h1 className="font-bold text-[24px] hidden md:block">
+            {members.fullName}
+          </h1>
+          <h2 className="text-[#AD0000] font-bold hidden md:block">
+            {members.role}
+          </h2>
           <p className="leading-9 font-regular">{members.biodata}</p>
         </div>
       </div>
