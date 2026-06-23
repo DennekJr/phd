@@ -23,29 +23,31 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative bottom-[200px] z-10 container mx-auto !px-[74px] py-20">
-        <div className="max-w-[760px]">
+      <div className="relative bottom-[150px] z-10 container mx-auto !px-[20px] md:!px-[75px] py-20">
+        <div className="max-w-[360px] md:max-w-[760px]">
           {/* Small heading */}
-          <p className="text-[#FF8B8B] !text-[24px] !leading-[100%] !tracking-[0%] mb-[10px] font-medium">
+          <p className="text-white !text-[24px] md:!text-[32px] !leading-[100%] !tracking-[0%] mb-[10px] font-bold">
             Network for
           </p>
           
           {/* Main heading */}
-          <h1 className="font-serif !text-[60px] !leading-[80px] !tracking-[0%] font-bold text-white mb-[20px] leading-tight">
+          <h1 className="!text-[36px] md:!text-[60px] !leading-[40px] md:!leading-[80px] !tracking-[0%] font-bold text-white !mb-[6px] md:!mb-[12px]">
             Nigerian Female<br />
             PHD Holders in<br />
             <span className="uppercase">ARTS & SCIENCES</span>
           </h1>
           
           {/* Subtitle */}
-          <p className="max-w-[546px] !text-[24px] !leading-[100%] !tracking-[0%] !pb-[50px] font-light text-white">
-            Empowering Nigerian Women in Academia for National Development
+          <p className="max-w-[546px] !text-[16px] md:!text-[20px] !leading-[26px] md:!leading-[28px] !tracking-[0%] md:!pb-[50px] !pb-[26px] !font-light text-white">
+          Empowering Nigerian women with Doctorate degrees in various fields of study for National development.
           </p>
           
           {/* CTA Button */}
-          <YellowButton>
-            JOIN US
-          </YellowButton>
+          <a href="mailto:NENFPHAS@gmail.com">
+            <YellowButton>
+              Join Us
+            </YellowButton>
+          </a>
         </div>
       </div>
 
@@ -57,8 +59,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
         <div className="flex flex-col items-center">
-          <span className="text-sm mb-2 opacity-70">Scroll down</span>
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>
