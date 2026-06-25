@@ -11,7 +11,7 @@ export const ExecutiveTrustees = [
     },
     {
         name: "Dr.  Osatohanmwen Osamudiamen Anastasia Eruaga",
-        role: "Vice President & Legal Advisor",
+        role: "Member & Legal Adviser",
         member: "Executive",
         image: "/images/associate-founders/osamudiamen.jpg",
         slug: "osatohanmwen-osamudiamen-anastasia-eruaga",
@@ -25,7 +25,7 @@ Osato is passionate about supporting processes that enhance gender equality and 
     },
     {
         name: "Dr. Sarah Ogah-Aduwari",
-        role: "SECRETARY",
+        role: "Vice President",
         member: "Executive",
         image: "/images/associate-founders/sarah.jpg",
         slug: "sarah-ogah-aduwari",
@@ -89,7 +89,7 @@ She loves traveling, reading and discussions.  She is married with children`)
     },
     {
         name: "Dr. Ngozi Cordelia Agbata",
-        role: "PROVOST",
+        role: "PROVOST/Welfare",
         member: "Executive",
         image: "/images/executives/ngozi-cordelia.jpeg",
         slug: "ngozi-cordelia-agbata",
@@ -102,7 +102,7 @@ Dr. Agbata has BA, MA and PHD in English, Literature and Literacy studies from U
     },
     {
         name: "Dr. Victoria Oladimeji",
-        role: "PRO",
+        role: "Member",
         member: "Executives",
         image: "/images/associate-founders/oladumeji.jpg",
         slug: "victoria-oladimeji",
@@ -206,12 +206,11 @@ Community Engagement
     },
     {
         name: "Dr. Josephine Abuya",
-        role: "Welfare Coordinator",
+        role: "General Secretary",
         image: "/images/associate-founders/josephine-abuya.jpg",
         slug: "josephine-abuya",
         member: "Associate Founders",
-        info: formatMultiLineString(`Dr. Josephine Abuya
-Welfare Coordinator`)
+        info: formatMultiLineString(`Dr. Abuya core expertise includes Educational Administration, Organizational Efficiency, and Mentorship. She holds a Ph.D. and M.Ed. in Educational Administration and Planning, complemented by a B.Ed. in English Education. Her diverse career spans teaching, tertiary lecturing, and strategic administration. She currently serves as an Administrative Officer at the National Space Research and Development Agency (NASRDA). Her Ph.D. research assessed occupational stress on academic staff job performance in Nigerian Federal Universities, demonstrating expertise in organizational behavior and governance. Dr. Abuya is committed to mentoring the next generation of female researchers across both the arts and sciences.`)
     }
 ];
 
