@@ -4,6 +4,24 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
     const events = [
         {
             date: {
+                month: 'Oct',
+                day: '22'
+            },
+            time: '7:00 pm',
+            title: 'NENFPHAS Inauguration',
+            description: `A landmark two-day inauguration ceremony on October 22nd & 23rd, 2026, at a top-notch hotel in Abuja (full address to be announced). The inauguration will showcase:
+• Presentation of Members & Trustees
+• Paper presentations by top successful Nigerian women
+• Scholarship awards — Bachelor's, Master's, and Doctorate degrees for deserving indigent students
+• Awards Night featuring:
+  – Female Youth Academic Excellence Awards
+  – Professionals & Distinguished Honour's Awards
+  – Distinguished Honour's Awards to male-driven organisations impacting women's education and empowerment
+• Gala Night`,
+            image: '/images/upcoming-events/event-three.jpg'
+        },
+        {
+            date: {
                 month: 'Aug',
                 day: '27'
             },
@@ -41,24 +59,6 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
             title: 'Online Professional Development Series: Publishing in High-Impact Journals',
             description: 'A virtual session offering practical advice and strategies for Nigerian female PhD holders aiming to publish their research in reputable international journals.',
             image: '/images/upcoming-events/event-four.png'
-        },
-        {
-            date: {
-                month: 'Oct',
-                day: '22'
-            },
-            time: '7:00 pm',
-            title: 'NENFPHAS Inauguration',
-            description: `A landmark two-day inauguration ceremony on October 22nd & 23rd, 2026, at a top-notch hotel in Abuja (full address to be announced). The inauguration will showcase:
-• Presentation of Members & Trustees
-• Paper presentations by top successful Nigerian women
-• Scholarship awards — Bachelor's, Master's, and Doctorate degrees for deserving indigent students
-• Awards Night featuring:
-  – Female Youth Academic Excellence Awards
-  – Professionals & Distinguished Honour's Awards
-  – Distinguished Honour's Awards to male-driven organisations impacting women's education and empowerment
-• Gala Night`,
-            image: '/images/upcoming-events/event-three.jpg'
         },
     ];
 
