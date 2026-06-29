@@ -211,14 +211,6 @@ Teaching and Mentoring
 Community Engagement
 - Actively involved in religious and town union activities
 - Held leadership positions in various organizations`)
-    },
-    {
-        name: "Dr. Josephine Abuya",
-        role: "General Secretary",
-        image: "/images/associate-founders/josephine-abuya.jpg",
-        slug: "josephine-abuya",
-        member: "Associate Founders",
-        info: formatMultiLineString(`Dr. Abuya core expertise includes Educational Administration, Organizational Efficiency, and Mentorship. She holds a Ph.D. and M.Ed. in Educational Administration and Planning, complemented by a B.Ed. in English Education. Her diverse career spans teaching, tertiary lecturing, and strategic administration. She currently serves as an Administrative Officer at the National Space Research and Development Agency (NASRDA). Her Ph.D. research assessed occupational stress on academic staff job performance in Nigerian Federal Universities, demonstrating expertise in organizational behavior and governance. Dr. Abuya is committed to mentoring the next generation of female researchers across both the arts and sciences.`)
     }
 ];
 
