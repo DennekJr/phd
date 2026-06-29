@@ -10,20 +10,6 @@ export const ExecutiveTrustees = [
         info: formatMultiLineString("Dr. Ada Esenwah is a Socio-economic Policy Analyst. Her focus is on Socio-economic growth of the developing countries especially Nigeria with bias on youth and women empowerment and poverty reduction. Her Doctorate thesis was on 'Youth Poverty Reduction in Nigeria: Policy Perspective' She obtained her Doctor of Social Science in Policy from the University of Bristol England in 2012 and her  Masters in International Development Studies in 2001 from the University of Bradford in England. She has a Post Graduate Diploma  in Agricultural Cooperatives from the University of Nigeria Nsukka obtained in 1988. Her undergraduate study was done in the Institute of Management and Technology Enugu Nigeria, where she obtained the Higher National Diploma in Cooperative Economics and Management in 1986. She is an author and editor of many write-ups.  Dr. Ada had organised successful seminars and conferences nationally and internationally. Career wise, she worked for the Central Bank of Nigeria for 34yrs and retired meritoriously in an Executive cadre in 2023. Currently, she consults privately on Socio-economic policy issues. For her leisure, she is a golf addict. She likes adventure especially ocean cruises to different parts of the world. Reading, researching, writing and editing are part of her life among other social interests. Dr. Esenwah is married with children."),
     },
     {
-        name: "Dr.  Osatohanmwen Osamudiamen Anastasia Eruaga",
-        role: "Member & Legal Adviser",
-        member: "Executive",
-        image: "/images/associate-founders/osamudiamen.jpg",
-        slug: "osatohanmwen-osamudiamen-anastasia-eruaga",
-        info: formatMultiLineString(`Dr. Mrs.  Osatohanmwen Osamudiamen Anastasia Eruaga 
-
-Dr. Mrs. Osatohanmwen (Osato) Anastasia Eruaga an Associate Professor with the Nigerian Institute of Advanced Legal Studies is the Head of Department, Private and Property Law at the Institute. She studied Law at the University of Benin, Nigeria and was called to the Nigerian Bar in 2006. Osato obtained an LL.M (Maritime Law) from the University of Nottingham, the United Kingdom in 2009 and her doctoral degree in Maritime Affairs (maritime law and policy) from the World Maritime University, Sweden.
-
-An NDDC Scholar and an Alumni of the Yeosu Academy of the Law of the Sea, has been involved in extensive legal research and writing. She has served as a speaker and guest lecturer at several local and international learned events. Her interests are in the areas of public international law, especially Law of the Sea, Marine Environmental Law, and Sustainability as well as Human Rights Law. She currently serves as the Nigerian branch representative to the International Law Association Committee on the Protection of People at Sea.
-
-Osato is passionate about supporting processes that enhance gender equality and protect the rights of vulnerable persons, especially children. She loves to travel and experience new cultures.`)
-    },
-    {
         name: "Dr. Sarah Ogah-Aduwari",
         role: "Vice President",
         member: "Executive",
@@ -35,6 +21,14 @@ Dr. Sarah, had her PHD in Adult Education and Community service in 2019 from the
 
 Dr Sarah is an accredited adult educationist  and community development consultant. She is a seasoned educationst with over 20 years of experience. Dr. Sarah, is also a fellow of the Chartered Institute of Strategic Management (ISMN) and has accomplished a tremendous feat in both the Public and Private Sector, making her a serial entrepreneur.
 She is the Founder and Director of Spring Valley Nursery, Primary, and High School Port Harcourt, a citadel of learning with a pristine standard, established in 2005.`)
+    },
+    {
+        name: "Dr. Josephine Abuya",
+        role: "General Secretary",
+        image: "/images/associate-founders/josephine-abuya.jpg",
+        slug: "josephine-abuya",
+        member: "Executive",
+        info: formatMultiLineString(`Dr. Abuya core expertise includes Educational Administration, Organizational Efficiency, and Mentorship. She holds a Ph.D. and M.Ed. in Educational Administration and Planning, complemented by a B.Ed. in English Education. Her diverse career spans teaching, tertiary lecturing, and strategic administration. She currently serves as an Administrative Officer at the National Space Research and Development Agency (NASRDA). Her Ph.D. research assessed occupational stress on academic staff job performance in Nigerian Federal Universities, demonstrating expertise in organizational behavior and governance. Dr. Abuya is committed to mentoring the next generation of female researchers across both the arts and sciences.`)
     },
     {
         name: "Dr. Hadiza Maina",
@@ -117,15 +111,29 @@ Dr. Oladimeji is from Osun state, married with children`)
     },
     {
         name: "Dr. Obiamaka Clara Itanyi",
-        role: "PRO 2 and IT MANAGER",
+        role: "PRO and IT MANAGER",
         image: "/images/executives/obiamaka.jpeg",
         slug: "itanyi-obiamaka",
         member: "Executive",
         info: formatMultiLineString(`Dr. Obiamaka Clara Itanyi
-(PRO 2 and IT mgr)
+(PRO and IT mgr)
 
 Dr. Obiamaka Clara Itanyi is a distinguished scholar with a PhD in Conflict, Peace, and Strategic Studies. Her expertise is in analyzing complex conflicts, developing strategic solutions, and fostering peacebuilding initiatives. Her research focuses on the impact of the ideology of the indigenous people of Biafra on socioeconomic and political development in Southeast Nigeria. She has published  in top-tier academic journals. She also has a strong background in research design, data analysis, and policy development. She provides insightful recommendations to stakeholders, policymakers, and organizations. Her goal is to contribute to the advancement of knowledge and practice in conflict resolution, peacebuilding, and strategic studies. Key areas of expertise include 1. Conflict Analysis and Resolution. 2. Peacebuilding and Post-Conflict Reconstruction. 3. Strategic Planning and Policy Development. 4. Research Design and Methodology.
 Dr. Itanyi hails from Enugu State.`)
+    },
+     {
+        name: "Dr.  Osatohanmwen Osamudiamen Anastasia Eruaga",
+        role: "Member & Legal Adviser",
+        member: "Executive",
+        image: "/images/associate-founders/osamudiamen.jpg",
+        slug: "osatohanmwen-osamudiamen-anastasia-eruaga",
+        info: formatMultiLineString(`Dr. Mrs.  Osatohanmwen Osamudiamen Anastasia Eruaga 
+
+Dr. Mrs. Osatohanmwen (Osato) Anastasia Eruaga an Associate Professor with the Nigerian Institute of Advanced Legal Studies is the Head of Department, Private and Property Law at the Institute. She studied Law at the University of Benin, Nigeria and was called to the Nigerian Bar in 2006. Osato obtained an LL.M (Maritime Law) from the University of Nottingham, the United Kingdom in 2009 and her doctoral degree in Maritime Affairs (maritime law and policy) from the World Maritime University, Sweden.
+
+An NDDC Scholar and an Alumni of the Yeosu Academy of the Law of the Sea, has been involved in extensive legal research and writing. She has served as a speaker and guest lecturer at several local and international learned events. Her interests are in the areas of public international law, especially Law of the Sea, Marine Environmental Law, and Sustainability as well as Human Rights Law. She currently serves as the Nigerian branch representative to the International Law Association Committee on the Protection of People at Sea.
+
+Osato is passionate about supporting processes that enhance gender equality and protect the rights of vulnerable persons, especially children. She loves to travel and experience new cultures.`)
     }
 ];
 
