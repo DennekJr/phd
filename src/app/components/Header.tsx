@@ -57,7 +57,9 @@ export default function Header() {
           </Link>
         </div>
         <div className="hidden md:flex items-center justify-end w-full">
-          <a href="mailto:NENFPHAS@gmail.com">
+          <a href="https://tally.so/r/KYy8yV"
+            target="_blank"
+            rel="noopener noreferrer">
             <YellowButton>
               Join Us
             </YellowButton>
@@ -109,7 +111,7 @@ export default function Header() {
           <Link href="/our-team" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
             Our Team
           </Link>
-          <a href="mailto:NENFPHAS@gmail.com" onClick={() => setIsOpen(false)} className="mt-2">
+          <a href="https://tally.so/r/KYy8yV" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="mt-2">
             <YellowButton className="w-full">Join Us</YellowButton>
           </a>
         </div>
