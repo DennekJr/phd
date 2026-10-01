@@ -80,13 +80,13 @@ export default function WhatWeDo() {
   };
 
   return (
-    <section className="relative flex items-center justify-center bg-white !pt-[125px] !pb-[146px] !px-[76px]">
-      <div className="mx-auto max-w-[1920px]">
+    <section id="what-we-do" className="relative scroll-mt-[7rem] flex items-center justify-center bg-white !pt-[7.8125rem] !pb-[9.125rem] !px-[4.75rem]">
+      <div className="mx-auto max-w-[120rem]">
         {/* Header */}
-        <div className="text-center !mb-[50px] lg:!mb-[135px]">
-          <h2 className="text-[24px] lg:text-[48px] font-bold text-[#222121] leading-[100%] flex items-center justify-center gap-2">
+        <div className="text-center !mb-[3.125rem] lg:!mb-[8.4375rem]">
+          <h2 className="text-[1.5rem] lg:text-[3rem] font-bold text-[#222121] leading-[100%] flex items-center justify-center gap-2">
             What We Do
-            <Image src={'/images/what-we-do/stars.svg'} alt='Title Icon' width={88} height={91} className="!w-[51px] lg:!w-[88px] !h-[53px] lg:!h-[91px]" />
+            <Image src={'/images/what-we-do/stars.svg'} alt='Title Icon' width={88} height={91} className="!w-[3.1875rem] lg:!w-[5.5rem] !h-[3.3125rem] lg:!h-[5.6875rem]" />
           </h2>
         </div>
 
@@ -95,25 +95,25 @@ export default function WhatWeDo() {
           <div
             ref={carouselRef}
             onScroll={handleScroll}
-            className="w-[90vw] mx-right !px-[20px] flex overflow-x-auto gap-[22px] snap-x snap-mandatory px-2 [-webkit-overflow-scrolling:touch] scroll-smooth no-scrollbar"
+            className="w-[90vw] mx-right !px-[1.25rem] flex overflow-x-auto gap-[1.375rem] snap-x snap-mandatory px-2 [-webkit-overflow-scrolling:touch] scroll-smooth no-scrollbar"
           >
             {activities.map((activity, index) => (
               <div
                 key={index}
                 ref={(el) => { slideRefs.current[index] = el; }}
-                className="snap-start shrink-0 w-[85%] first:ml-2 last:mr-2 bg-[#F9F5F2] min-h-[400px] lg:min-h-[510px] !px-[23px] !py-[53px] shadow-sm"
+                className="snap-start shrink-0 w-[85%] first:ml-2 last:mr-2 bg-[#F9F5F2] min-h-[25rem] lg:min-h-[31.875rem] !px-[1.4375rem] !py-[3.3125rem] shadow-sm"
               >
                 <div className="!mb-4">
                   <Image src={activity.icon} alt={activity.title} width={45} height={45} />
                 </div>
-                <h3 className="text-[24px] font-semibold text-[#222121] !mb-6 !leading-[100%] !tracking-[0%]">
+                <h3 className="text-[1.5rem] font-semibold text-[#222121] !mb-6 !leading-[100%] !tracking-[0%]">
                   {activity.title}
                 </h3>
-                <p className="text-[16px] font-light text-[#222121] !leading-[28px] !tracking-[0%]">
+                <p className="text-[1rem] font-light text-[#222121] !leading-[1.75rem] !tracking-[0%]">
                   {activity.description}
                 </p>
                 {activity.descriptionTwo && (
-                  <p className="text-[16px] font-light text-[#222121] !leading-[28px] !tracking-[0%] mt-2">
+                  <p className="text-[1rem] font-light text-[#222121] !leading-[1.75rem] !tracking-[0%] mt-2">
                     {activity.descriptionTwo}
                   </p>
                 )}
@@ -121,33 +121,33 @@ export default function WhatWeDo() {
             ))}
           </div>
           {/* Dots */}
-          <div className="flex items-center justify-center gap-3 !mt-[48px]">
+          <div className="flex items-center justify-center gap-3 !mt-[3rem]">
             {activities.map((_, i) => (
               <button
                 key={i}
                 aria-label={`Go to slide ${i + 1}`}
                 onClick={() => scrollToIndex(i)}
-                className={`rounded-full ${i === activeIdx ? 'bg-[#B00000] h-[15px] w-[15px]' : 'bg-[#D9D9D9] h-[10px] w-[10px]'}`}
+                className={`rounded-full ${i === activeIdx ? 'bg-[#B00000] h-[0.9375rem] w-[0.9375rem]' : 'bg-[#D9D9D9] h-[0.625rem] w-[0.625rem]'}`}
               />
             ))}
           </div>
         </div>
 
         {/* Activities Grid - Desktop/Tablet */}
-        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-[70px]">
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-[4.375rem]">
           {activities.map((activity, index) => (
-            <div key={index} className="bg-[#F9F5F2] w-full min-h-[510px] !px-[23px] !py-[53px] shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div key={index} className="bg-[#F9F5F2] w-full min-h-[31.875rem] !px-[1.4375rem] !py-[3.3125rem] shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="!mb-4">
                 <Image src={activity.icon} alt={activity.title} width={45} height={45} />
               </div>
-              <h3 className="text-[24px] font-semibold text-[#222121] !mb-6 !leading-[100%] !tracking-[0%]">
+              <h3 className="text-[1.5rem] font-semibold text-[#222121] !mb-6 !leading-[100%] !tracking-[0%]">
                 {activity.title}
               </h3>
-              <p className="text-[16px] font-light text-[#222121] !leading-[28px] !tracking-[0%]">
+              <p className="text-[1rem] font-light text-[#222121] !leading-[1.75rem] !tracking-[0%]">
                 {activity.description}
               </p>
               {activity.descriptionTwo && (
-                <p className="text-[16px] font-light text-[#222121] !leading-[28px] !tracking-[0%] mt-2">
+                <p className="text-[1rem] font-light text-[#222121] !leading-[1.75rem] !tracking-[0%] mt-2">
                   {activity.descriptionTwo}
                 </p>
               )}
