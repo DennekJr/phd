@@ -6,6 +6,24 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
     const events = [
         {
             date: {
+                month: 'Oct',
+                day: '22'
+            },
+            time: '7:00 pm',
+            title: 'NENFPHAS Inauguration',
+            description: `A landmark two-day inauguration ceremony on October 22nd & 23rd, 2026, at a top-notch hotel in Abuja (full address to be announced). The inauguration will showcase:
+• Presentation of Members & Trustees
+• Paper presentations by top successful Nigerian women
+• Scholarship awards — Bachelor's, Master's, and Doctorate degrees for deserving indigent students
+• Awards Night featuring:
+  – Female Youth Academic Excellence Awards
+  – Professionals & Distinguished Honour's Awards
+  – Distinguished Honour's Awards to male-driven organisations impacting women's education and empowerment
+• Gala Night`,
+            image: '/images/upcoming-events/event-three.webp'
+        },
+        {
+            date: {
                 month: 'Aug',
                 day: '27'
             },
@@ -44,17 +62,6 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
             description: 'A virtual session offering practical advice and strategies for Nigerian female PhD holders aiming to publish their research in reputable international journals.',
             image: '/images/upcoming-events/event-four.webp'
         },
-        {
-            date: {
-                month: 'Oct',
-                day: '8'
-            },
-            time: '7:00 pm',
-            title: 'Annual NENFPHAS Gala & Scholarship Awards Night',
-            description: 'Description: An elegant evening in Lagos celebrating academic achievements and recognizing our annual scholarship recipients. Features a keynote address and networking opportunities.',
-            image: '/images/upcoming-events/event-three.webp'
-        },
-
     ];
 
     return (
@@ -89,8 +96,6 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
                             {/* Date Block */}
                             <div className="lg:block hidden shrink-0">
                                 <div className="bg-[#AD0000] text-white text-center w-[6.375rem] h-[4.875rem] flex flex-col justify-center">
-                                    {/* <div className="text-[0.875rem] font-medium !leading-[100%] !tracking-[0%]">{event.date.month}</div>
-                                    <div className="text-[2rem] font-bold !leading-[100%] !tracking-[0%]">{event.date.day}</div> */}
                                     <div className="text-[0.875rem] lg:text-[1.25rem] font-bold !leading-[100%] !tracking-[0%]">Coming</div>
                                 </div>
                                 <div className="bg-[#FDC182] text-[#000000] text-center !text-[0.75rem] lg:!text-[0.875rem] font-bold !py-[0.625rem] !px-[1.3125rem]">
@@ -104,8 +109,6 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
                                     {event.title}
                                     <div className="lg:hidden block w-fit">
                                         <div className="bg-[#AD0000] text-white text-center w-[4.0625rem] lg:w-[6.375rem] h-[3.125rem] lg:h-[4.875rem] flex flex-col justify-center">
-                                            {/* <div className="text-[0.875rem] font-medium !leading-[100%] !tracking-[0%]">{event.date.month}</div>
-                                            <div className="text-[1.25rem] lg:text-[2rem] font-bold !leading-[100%] !tracking-[0%]">{event.date.day}</div> */}
                                             <div className="text-[0.875rem] lg:text-[1.25rem] font-bold !leading-[100%] !tracking-[0%]">Coming</div>
                                         </div>
                                         <div className="bg-[#FDC182] text-[#000000] text-center !text-[0.75rem] lg:!text-[0.875rem] font-bold !py-[0.3125rem] lg:!py-[0.625rem] !px-[0.5rem] lg:!px-[1.3125rem]">
@@ -153,4 +156,4 @@ export default function UpcomingEvents({ showAllEvents = false }: { showAllEvent
             </div>
         </section>
     );
-} 
+}

@@ -33,7 +33,7 @@ export default function EventCardHero() {
                     {/* ))} */}
                 </div>
                 <p className="text-[#232427] !text-[1rem] !leading-[1.5rem] lg:!leading-[120%] !tracking-[0.01em] font-light text-left">
-                    An evening mixer in Lekki, Lagos, offering a relaxed environment for emerging female scholars to connect with experienced PhD holders for mentorship and career advice.
+                    An evening mixer in Abuja, offering a relaxed environment for emerging female scholars to connect with experienced PhD holders for mentorship and career advice.
                 </p>
                 <div>
                     <YellowButton onClick={handleBecomeMember}>Become a Member</YellowButton>
