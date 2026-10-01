@@ -1,15 +1,17 @@
 import Image from 'next/image';
 import EventCardHero from './Event-Card-Hero';
+import SmartImage from "@/app/components/SmartImage";
 
 export default function Hero() {
     return (
-        <section className="relative flex flex-col items-center justify-end w-full min-h-[924px] overflow-hidden lg:pt-0 pt-[151px] !pb-[120px]">
+        <section className="relative flex flex-col items-center justify-end w-full min-h-[57.75rem] overflow-hidden lg:pt-0 pt-[9.4375rem] !pb-[7.5rem]">
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full">
-                <Image
-                    src="/images/events/events-hero.jpg"
+                <SmartImage
+                    src="/images/events/events-hero.webp"
                     alt="Events hero background"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                 />
@@ -20,9 +22,9 @@ export default function Hero() {
             />
 
             {/* Content Overlay */}
-            <div className="relative z-10 flex items-center !pt-[151px] justify-center h-full">
+            <div className="relative z-10 flex items-center !pt-[9.4375rem] justify-center h-full">
                 <div className="text-center text-white">
-                    <h1 className="text-[24px] md:text-[48px] !text-[#fff] font-bold !mb-[50px] lg:!mb-[100px] flex items-center justify-center !gap-[19px]">
+                    <h1 className="text-[1.5rem] md:text-[3rem] !text-[#fff] font-bold !mb-[3.125rem] lg:!mb-[6.25rem] flex items-center justify-center !gap-[1.1875rem]">
                         Upcoming Events <span>
                             <Image
                                 src="/images/events/featured-events-header.svg"
@@ -35,8 +37,8 @@ export default function Hero() {
                         </span>
                     </h1>
                     <EventCardHero />
-                    {/* <div className="flex items-center justify-center gap-[12px] !mt-[31px]">
-                        <span className="flex items-center justify-center gap-[10px]">
+                    {/* <div className="flex items-center justify-center gap-[0.75rem] !mt-[1.9375rem]">
+                        <span className="flex items-center justify-center gap-[0.625rem]">
                             <Image
                                 src="/images/events/location-icon.svg"
                                 alt="Events hero background"
@@ -45,7 +47,7 @@ export default function Hero() {
                                 className="object-contain w-auto h-auto"
                             />
                         </span>
-                        <span className="text-[24px] !leading-[100%] !tracking-[0.01em]">
+                        <span className="text-[1.5rem] !leading-[100%] !tracking-[0.01em]">
                         The Podium, 124 T. F. Kuboye Rd, Lekki Phase I, Lekki 106104, Lagos
                         </span>
                     </div> */}

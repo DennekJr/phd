@@ -20,7 +20,7 @@ export const formattedInfo = formatMultiLineString(originalContent);
 export const trusteeWithInfo = {
     name: "Dr. Kema Chikwe",
     role: "MEMBER",
-    image: "/images/board-of-trustees/kema-chikwe.png",
+    image: "/images/board-of-trustees/kema-chikwe.webp",
     info: formattedInfo
 };
 
@@ -28,7 +28,7 @@ export const trusteeWithInfo = {
 export const trusteeWithTemplateLiteral = {
     name: "Dr. Kema Chikwe",
     role: "MEMBER",
-    image: "/images/board-of-trustees/kema-chikwe.png",
+    image: "/images/board-of-trustees/kema-chikwe.webp",
     info: formatAsTemplateLiteral(originalContent)
 };
 
@@ -36,7 +36,7 @@ export const trusteeWithTemplateLiteral = {
 export const trusteeWithConcatenated = {
     name: "Dr. Kema Chikwe",
     role: "MEMBER",
-    image: "/images/board-of-trustees/kema-chikwe.png",
+    image: "/images/board-of-trustees/kema-chikwe.webp",
     info: formatAsConcatenatedString(originalContent)
 };
 

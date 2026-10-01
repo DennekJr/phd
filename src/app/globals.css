@@ -11,8 +11,30 @@
   margin: 0;
 }
 
+/* ---------------------------------------------------------------
+   Fluid scaling
+   Every layout value in the app is authored in rem, so the whole
+   UI scales with the viewport instead of snapping at breakpoints.
+   1rem === 16px at the 1512px desktop design width, and at the
+   440px mobile design width. The clamps stop the layout from
+   collapsing on small laptops/tablets or ballooning on wide screens.
+--------------------------------------------------------------- */
 html {
+  font-size: clamp(13px, calc(100vw / 1512 * 16), 19px);
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: clamp(13px, calc(100vw / 440 * 16), 17px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -49,4 +71,72 @@ body {
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+}
+
+/* ---------------------------------------------------------------
+   Loading states
+--------------------------------------------------------------- */
+
+/* Shimmering placeholder shown while an image or a route is loading. */
+.skeleton {
+  background-color: rgba(255, 255, 255, 0.06);
+  background-image: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(253, 193, 130, 0.18) 45%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  animation: skeleton-sweep 1.4s ease-in-out infinite;
+}
+
+/* On light sections the sweep needs a darker base to stay visible. */
+.skeleton-light {
+  background-color: rgba(35, 36, 39, 0.07);
+  background-image: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.75) 45%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+@keyframes skeleton-sweep {
+  from {
+    background-position: 160% 0;
+  }
+  to {
+    background-position: -60% 0;
+  }
+}
+
+/* Images fade and un-blur into place once decoded. */
+.media-fade {
+  opacity: 0;
+  filter: blur(1.25rem);
+  transform: scale(1.04);
+  transition:
+    opacity 700ms ease-out,
+    filter 700ms ease-out,
+    transform 900ms ease-out;
+}
+
+.media-fade[data-loaded='true'] {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+  }
+
+  .media-fade,
+  .media-fade[data-loaded='true'] {
+    filter: none;
+    transform: none;
+    transition: opacity 200ms linear;
+  }
 }
