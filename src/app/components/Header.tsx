@@ -12,7 +12,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="absolute w-full top-0 left-0 right-0 z-50">
-      <nav className="w-full !py-[31.5px] !px-[20px] md:!px-[75px] flex items-center justify-between relative gap-4">
+      <nav className="w-full !py-[1.9688rem] !px-[1.25rem] md:!px-[4.6875rem] flex items-center justify-between relative gap-4">
         {/* Logo */}
         <div className="flex items-center w-full hover:cursor-pointer" onClick={() => router.push('/')}>
           <Image
@@ -21,16 +21,16 @@ export default function Header() {
             width={247}
             height={95}
             priority
-            className="md:h-[95px] h-[70px] md:w-[247px] w-[180px]"
+            className="md:h-[5.9375rem] h-[4.375rem] md:w-[15.4375rem] w-[11.25rem]"
           />
         </div>
 
         {/* Navigation Menu (centered) */}
-        <div className="md:flex hidden items-center text-white !space-x-[61px] justify-center w-full">
+        <div className="md:flex hidden items-center text-white !space-x-[3.8125rem] justify-center w-full">
           <Link
             href="/"
             style={{ fontWeight: pathname === '/' ? '700' : '400' }}
-            className={`!text-[16px] !leading-[100%] !tracking-[10%] no-underline ${pathname.includes('/our-team')
+            className={`!text-[1rem] !leading-[100%] !tracking-[10%] no-underline ${pathname.includes('/our-team')
                 ? '!text-[#000000] hover:text-gray-800'
                 : '!text-[#ffffff] hover:text-gray-200'
               }`}          >
@@ -39,7 +39,7 @@ export default function Header() {
           <Link
             href="/events"
             style={{ fontWeight: pathname.includes('/events') ? '700' : '400' }}
-            className={`!text-[16px] !leading-[100%] !tracking-[10%] no-underline ${pathname.includes('/our-team')
+            className={`!text-[1rem] !leading-[100%] !tracking-[10%] no-underline ${pathname.includes('/our-team')
                 ? '!text-[#000000] hover:text-gray-800'
                 : '!text-[#ffffff] hover:text-gray-200'
               }`}          >
@@ -48,7 +48,7 @@ export default function Header() {
           <Link
             href="/our-team"
             style={{ fontWeight: pathname.includes('/our-team') ? '700' : '400' }}
-            className={`!text-[16px] whitespace-nowrap !leading-[100%] !tracking-[10%] no-underline ${pathname.includes('/our-team')
+            className={`!text-[1rem] whitespace-nowrap !leading-[100%] !tracking-[10%] no-underline ${pathname.includes('/our-team')
                 ? '!text-[#000000] hover:text-gray-800'
                 : '!text-[#ffffff] hover:text-gray-200'
               }`}
@@ -68,7 +68,7 @@ export default function Header() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden flex items-center !p-[16px]"
+          className="md:hidden flex items-center !p-[1rem]"
           onClick={() => setIsOpen(open => !open)}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
@@ -91,7 +91,7 @@ export default function Header() {
       {/* Mobile slide-down menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden z-50 absolute left-0 right-0 top-[88px] !pb-[50px] !p-[20px] !mx-[20px] bg-white !border-t !border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
+        className={`md:hidden z-50 absolute left-0 right-0 top-[5.5rem] !pb-[3.125rem] !p-[1.25rem] !mx-[1.25rem] bg-white !border-t !border-gray-100 shadow-md origin-top overflow-hidden transition-transform duration-300 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}
       >
         <div className="flex items-center justify-center flex-col gap-4 p-5">
           <Image
@@ -102,13 +102,13 @@ export default function Header() {
             priority
             className="h-auto w-[75%]"
           />
-          <Link href="/" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
+          <Link href="/" onClick={() => setIsOpen(false)} className="text-[1.125rem] font-medium text-[#232427]">
             Home
           </Link>
-          <Link href="/events" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
+          <Link href="/events" onClick={() => setIsOpen(false)} className="text-[1.125rem] font-medium text-[#232427]">
             Events
           </Link>
-          <Link href="/our-team" onClick={() => setIsOpen(false)} className="text-[18px] font-medium text-[#232427]">
+          <Link href="/our-team" onClick={() => setIsOpen(false)} className="text-[1.125rem] font-medium text-[#232427]">
             Our Team
           </Link>
           <a href="https://tally.so/r/KYy8yV" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="mt-2">

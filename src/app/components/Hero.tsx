@@ -1,4 +1,5 @@
 import YellowButton from "./YellowButton";
+import SmartImage from "@/app/components/SmartImage";
 
 export default function Hero() {
   return (
@@ -6,11 +7,13 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 w-full h-[100vh]">
         {/* Background Image */}
-        <div 
-          className="w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/images/hero.jpg)'
-          }}
+        <SmartImage
+          src="/images/hero.webp"
+          alt="Nigerian female PhD holders at graduation"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
         
         {/* Black Gradient Overlay - 70% left to 0% right */}
@@ -23,22 +26,22 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative bottom-[150px] z-10 container mx-auto !px-[20px] md:!px-[75px] py-20">
-        <div className="max-w-[360px] md:max-w-[760px]">
+      <div className="relative bottom-[9.375rem] z-10 container mx-auto !px-[1.25rem] md:!px-[4.6875rem] py-20">
+        <div className="max-w-[22.5rem] md:max-w-[47.5rem]">
           {/* Small heading */}
-          <p className="text-white !text-[24px] md:!text-[32px] !leading-[100%] !tracking-[0%] mb-[10px] font-bold">
+          <p className="text-white !text-[1.5rem] md:!text-[2rem] !leading-[100%] !tracking-[0%] mb-[0.625rem] font-bold">
             Network for
           </p>
           
           {/* Main heading */}
-          <h1 className="!text-[36px] md:!text-[60px] !leading-[40px] md:!leading-[80px] !tracking-[0%] font-bold text-white !mb-[6px] md:!mb-[12px]">
+          <h1 className="!text-[2.25rem] md:!text-[3.75rem] !leading-[2.5rem] md:!leading-[5rem] !tracking-[0%] font-bold text-white !mb-[0.375rem] md:!mb-[0.75rem]">
             Nigerian Female<br />
             PHD Holders in<br />
             <span className="uppercase">ARTS & SCIENCES</span>
           </h1>
           
           {/* Subtitle */}
-          <p className="max-w-[546px] !text-[16px] md:!text-[20px] !leading-[26px] md:!leading-[28px] !tracking-[0%] md:!pb-[50px] !pb-[26px] !font-light text-white">
+          <p className="max-w-[34.125rem] !text-[1rem] md:!text-[1.25rem] !leading-[1.625rem] md:!leading-[1.75rem] !tracking-[0%] md:!pb-[3.125rem] !pb-[1.625rem] !font-light text-white">
           Empowering Nigerian women with Doctorate degrees in various fields of study for National development.
           </p>
           

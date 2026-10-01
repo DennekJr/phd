@@ -5,7 +5,7 @@ export const ExecutiveTrustees = [
         name: "Dr. Adaeze Patricia Esenwah ",
         role: "FOUNDER/PRESIDENT",
         member: "Executive",
-        image: "/images/associate-founders/adaeze.jpg",
+        image: "/images/associate-founders/adaeze.webp",
         slug: "adaeze-patricia-esenwah",
         info: formatMultiLineString("Dr. Ada Esenwah is a Socio-economic Policy Analyst. Her focus is on Socio-economic growth of the developing countries especially Nigeria with bias on youth and women empowerment and poverty reduction. Her Doctorate thesis was on 'Youth Poverty Reduction in Nigeria: Policy Perspective' She obtained her Doctor of Social Science in Policy from the University of Bristol England in 2012 and her  Masters in International Development Studies in 2001 from the University of Bradford in England. She has a Post Graduate Diploma  in Agricultural Cooperatives from the University of Nigeria Nsukka obtained in 1988. Her undergraduate study was done in the Institute of Management and Technology Enugu Nigeria, where she obtained the Higher National Diploma in Cooperative Economics and Management in 1986. She is an author and editor of many write-ups.  Dr. Ada had organised successful seminars and conferences nationally and internationally. Career wise, she worked for the Central Bank of Nigeria for 34yrs and retired meritoriously in an Executive cadre in 2023. Currently, she consults privately on Socio-economic policy issues. For her leisure, she is a golf addict. She likes adventure especially ocean cruises to different parts of the world. Reading, researching, writing and editing are part of her life among other social interests. Dr. Esenwah is married with children."),
     },
@@ -13,7 +13,7 @@ export const ExecutiveTrustees = [
         name: "Dr. Sarah Ogah-Aduwari",
         role: "Vice President",
         member: "Executive",
-        image: "/images/associate-founders/sarah.jpg",
+        image: "/images/associate-founders/sarah.webp",
         slug: "sarah-ogah-aduwari",
         info: formatMultiLineString(`Dr. Sarah Ogah-Aduwari mni a member of the National Institute Nigeria, is a philanthropist, gender advocate, and educationist. She is from the Idoma ethnic group of Nigeria.
 
@@ -25,7 +25,7 @@ She is the Founder and Director of Spring Valley Nursery, Primary, and High Scho
     {
         name: "Dr. Josephine Abuya",
         role: "General Secretary",
-        image: "/images/associate-founders/josephine-abuya.jpg",
+        image: "/images/associate-founders/josephine-abuya.webp",
         slug: "josephine-abuya",
         member: "Executive",
         info: formatMultiLineString(`Dr. Abuya core expertise includes Educational Administration, Organizational Efficiency, and Mentorship. She holds a Ph.D. and M.Ed. in Educational Administration and Planning, complemented by a B.Ed. in English Education. Her diverse career spans teaching, tertiary lecturing, and strategic administration. She currently serves as an Administrative Officer at the National Space Research and Development Agency (NASRDA). Her Ph.D. research assessed occupational stress on academic staff job performance in Nigerian Federal Universities, demonstrating expertise in organizational behavior and governance. Dr. Abuya is committed to mentoring the next generation of female researchers across both the arts and sciences.`)
@@ -34,7 +34,7 @@ She is the Founder and Director of Spring Valley Nursery, Primary, and High Scho
         name: "Dr. Hadiza Maina",
         role: "ASSISTANT SECRETARY",
         member: "Executive",
-        image: "/images/associate-founders/hadiza.jpg",
+        image: "/images/associate-founders/hadiza.webp",
         slug: "hadiza-maina",
         info: formatMultiLineString(`Dr (Mrs) Hadiza Maina , hails from Okene, Kogi State, a Moslem. 
 She is a Development Finance Policy expert with a proven track record in policy making and implementation for enhancing micro, small, and medium enterprises (MSMEs) access to finance through strategic planning and relationship management. She is an advocate of deepening Financial Inclusion for women in Nigeria and rural rejuvenation through agriculture, guarantee programmes, brownfield development
@@ -51,7 +51,7 @@ hadimaina@yahoo.com.`)
         name: "Prof. Princess Enape Victoria Ayishetu",
         role: "FINANCIAL SECRETARY",
         member: "Executive",
-        image: "/images/associate-founders/princess.jpg",
+        image: "/images/associate-founders/princess.webp",
         slug: "princess-enape-victoria-ayishetu",
         info: formatMultiLineString(`Dr. (Mrs) Princess Enape Victoria Ayishetu, PhD, MSC, MBA, PGD, HND , FCCA, FCTI, FCFM, FCT, FCA, MNIM, CFE, CIPFA.
 
@@ -69,7 +69,7 @@ She is married with children`)
         name: "Dr Victoria Afangideh",
         role: "TREASURER",
         member: "Executive",
-        image: "/images/associate-founders/victoria.jpg",
+        image: "/images/associate-founders/victoria.webp",
         slug: "victoria-afangideh",
         info: formatMultiLineString(`Dr. Victoria hails from Odukpani LGA of cross river State
 She is an educationist having taught in FCT schools for over two decades and counting. Presently still teaching and working as an administrator for the FCT Department of Mass Education (FCT- DME) in charge of special duties and women education. 
@@ -85,7 +85,7 @@ She loves traveling, reading and discussions.  She is married with children`)
         name: "Dr. Ngozi Cordelia Agbata",
         role: "PROVOST/Welfare",
         member: "Executive",
-        image: "/images/executives/ngozi-cordelia.jpeg",
+        image: "/images/executives/ngozi-cordelia.webp",
         slug: "ngozi-cordelia-agbata",
         info: formatMultiLineString(`Dr. Ngozi Cordelia Agbata (Provost).
 agbatavn@gmail.com
@@ -98,7 +98,7 @@ Dr. Agbata has BA, MA and PHD in English, Literature and Literacy studies from U
         name: "Dr. Victoria Oladimeji",
         role: "Member",
         member: "Executives",
-        image: "/images/associate-founders/oladumeji.jpg",
+        image: "/images/associate-founders/oladumeji.webp",
         slug: "victoria-oladimeji",
         info: formatMultiLineString(`Dr. Oladimeji is a Public Health Specialist. She obtained her PhD in Education  
 from the University of Wales Cardiff United Kingdom 1992.
@@ -112,7 +112,7 @@ Dr. Oladimeji is from Osun state, married with children`)
     {
         name: "Dr. Obiamaka Clara Itanyi",
         role: "PRO and IT MANAGER",
-        image: "/images/executives/obiamaka.jpeg",
+        image: "/images/executives/obiamaka.webp",
         slug: "itanyi-obiamaka",
         member: "Executive",
         info: formatMultiLineString(`Dr. Obiamaka Clara Itanyi
@@ -125,7 +125,7 @@ Dr. Itanyi hails from Enugu State.`)
         name: "Dr.  Osatohanmwen Osamudiamen Anastasia Eruaga",
         role: "Member & Legal Adviser",
         member: "Executive",
-        image: "/images/associate-founders/osamudiamen.jpg",
+        image: "/images/associate-founders/osamudiamen.webp",
         slug: "osatohanmwen-osamudiamen-anastasia-eruaga",
         info: formatMultiLineString(`Dr. Mrs.  Osatohanmwen Osamudiamen Anastasia Eruaga 
 
@@ -141,7 +141,7 @@ export const AssociateFounderTrustees = [
     {
         name: "Prof. Chioma L. Ikeanyionwu",
         role: "Associate Founder, Research Coordinator",
-        image: "/images/associate-founders/Ikeanyionwu.jpg",
+        image: "/images/associate-founders/Ikeanyionwu.webp",
         slug: "chioma-ikeanyionwu",
         member: "Associate Founders",
         info: formatMultiLineString(`
@@ -151,7 +151,7 @@ With a strong academic background, including a Bachelor of Science, Master of Sc
     {
         name: "Prof. Ngozi Eunice Egbuna",
         role: "Program and Compliance Coordinator",
-        image: "/images/associate-founders/ngozi.jpg",
+        image: "/images/associate-founders/ngozi.webp",
         member: "Associate Founders",
         slug: "ngozi-eunice-egbuna",
         info: formatMultiLineString(`Prof. Ngozi Egbuna is a visiting Professor of International Banking, Finance and Trade at the Nnamdi Azikiwe University Awka, Nigeria and Policy studies at the African University of Science and Technology, Abuja. 
@@ -162,7 +162,7 @@ She is an author of several books and academic papers as well as a life member o
     {
         name: "Prof. Chinenye Viola Udeze",
         role: "Associate Founder, Research",
-        image: "/images/associate-founders/chineye.jpg",
+        image: "/images/associate-founders/chineye.webp",
         member: "Associate Founders",
         slug: "chinenye-viola-udeze",
         info: formatMultiLineString(`PROFESSOR CHINENYE VIOLA UDEZE JP
@@ -219,7 +219,7 @@ export const BoardOfTrusteesMembers = [
         name: "Prof. Mnguember Vicky Sylvester",
         role: "SECRETARY",
         member: "Board of Trustees",
-        image: "/images/board-of-trustees/vicky-sylvester-woman.jpg",
+        image: "/images/board-of-trustees/vicky-sylvester-woman.webp",
         slug: "vicky-sylvester",
         info: formatMultiLineString("Prof. Mnguember Vicky Sylvester is a professor of Literature and Creative Writing at the University of Abuja. She obtained her M. A at Bayero University Kano and her PhD. at the University of Jos with researches at the London School of Oriental and African Studies . She holds a PGDE. She's taught at several institutions of higher learning. Worked also as a radio programs producer, a newspaper journalist and editor with Radio OYO and the Nigeria Standard covering several states. She's known for her critical works in gender security and inclusion. Many of her researches and fictional works attests to that passion. She's received awards for her books which include poetry, drama and prose. Her latest collection of poetry,  Experience is a Woman can be found on Amazon and Boldscholar. Her passion is community service especially training teachers in schools where advancement training is expensive and unaffordable. Prof. Sylvester comes from Kwande Local government area of Benue State."),
     },
@@ -227,7 +227,7 @@ export const BoardOfTrusteesMembers = [
         name: "Dr. Kema Chikwe",
         role: "MEMBER",
         member: "Board of Trustees",
-        image: "/images/board-of-trustees/kema-chikwe.png",
+        image: "/images/board-of-trustees/kema-chikwe.webp",
         slug: "kema-chikwe",
         info: formatMultiLineString("Kema Chikwe was born to Mr. Nathan Ejiogu from Egbu, Owerri in Imo State and Mrs Amelia Ejiogu.  She attended Queen's College, Lagos, and Queen's School, Enugu, for her secondary education and Advanced Teachers Training College, Owerri, before she proceeded to Queens College, City University of New York, where she obtained Bachelor's and Master's degrees in French. She earned her Doctorate Degree in Curriculum Education in 1995 from the University of Nigeria, Nsukka. Dr. Chikwe is a distinguished public administrator, educationist, gender and social engineer, activist, writer, and diplomat. Dr. Chikwe's dynamism especially came to the fore when she was appointed as the Minister of Transport in the cabinet of former President Olusegun Obasanjo following Nigeria's return to democracy in 1999. As Minister of Transport, Dr. Chikwe presided over 20 Federal Government parastatals, including the Nigerian Ports Authority, National Maritime Authority, Nigeria Inland Waterways Authority, and so on. Thus, Dr. Chikwe significantly became the first woman to be appointed as the head of a major infrastructure ministry.  She was later moved to the Ministry of Aviation as the first female Minister of Aviation between 2000 and 2003, where she recorded no fewer sterling achievements in her new assignment. Between 2005 and 2006, Dr. Chikwe served as the first female Chairman of Joint Admission and Matriculations Board, JAMB.  Dr. Chikwe was appointed Nigeria's Ambassador to Ireland and Iceland in 2008. Between 2008 and 2011 Dr. Chikwe founded the Women's Leadership Institute. Women's Leadership Institute (WLI) is an international leadership development organization. WLI provides a professional and non-partisan platform for women in Nigeria and across Africa to develop their leadership capacity and to take on constructive roles in the political and economic development of Nigeria and Africa in general. WLI offers vocational training, executive leadership programs, customized leadership interventions, and classroom-based leadership development courses in three categories: certificate, diploma, and advanced leadership courses. Dr. Chikwe is a renowned writer; her books are included in both the Nigerian and American curricula. The books include Kema Chikwe: Across Borders, Women of My Era, Village Boys, First School Day for Adaze, Kame Chameleon Tours the Garden, My Precious Book, and other publications. Her NGO-Women and A New Orientation, continues to empower women nationwide. Her goal is to relentlessly work towards tireless change, especially concerning women in Nigeria. Dr. Kema Chikwe, a life member of NCWS, once served as the Secretary of Imo State NCWS and in other capacities on the State and National levels. Currently, she is a member of the board of trustees at the national level. Dr. Kema Chikwe is married to Chief (Nze) Herbert Chikwe, a successful businessman.  They are blessed with five children and eighteen grandchildren."),
     },
@@ -235,7 +235,7 @@ export const BoardOfTrusteesMembers = [
         name: "Dr. Hassan Mahmud",
         role: "MEMBER",
         member: "Board of Trustees",
-        image: "/images/board-of-trustees/massan-mahmoud.png",
+        image: "/images/board-of-trustees/massan-mahmoud.webp",
         slug: "hassan-mahmud",
         info: formatMultiLineString("Dr. Mahmud Hassan is an economist, financial sector regulator,  and central banker with over 30 years of financial sector regulation, policy research and public service experience. Before his retirement from the Central Bank of Nigeria in 2024, he was one time the Director, Trade and Exchange Department, as well as  the Director of Monetary Policy Department  during his career at the Bank. Prior to these roles, he was the Group Head, Macro-prudential Analysis in the Financial Policy and Regulation Department at the Bank. He also served at the African Union Commission, Ethiopia, as a technical expert and lead consultant  on African trade integration and monetary Union. He currently serve on the Boards of many multilateral corporations,Including the African Finance Corporation. He is a visiting scholar and faculty in many Nigeria Universities, including, scholar of Applied Macroeconomics at the Energy Business School of the Federal University of Petroleum Resources, Effurun,, Nigeria, and a visiting Professor of Economics at the Baze University. Abuja. Nigeria. He has published many research articles in the fields of applied macroeconomics, Petroleum economics, Energy, Institutions, environment, Sustainability and Growth. He holds a MSc in Energy Economics and Policy  and a PhD in Economics from University of Surrey, United Kingdom.")
     },
@@ -243,7 +243,7 @@ export const BoardOfTrusteesMembers = [
         name: "Dr. Hassana Abdullahi",
         role: "MEMBER",
         member: "Board of Trustees",
-        image: "/images/board-of-trustees/hassana.jpg",
+        image: "/images/board-of-trustees/hassana.webp",
         slug: "hassana-abdullahi",
         info: formatMultiLineString("Dr Hassana Abdullahi was born in Jos to late the Vice Admiral Husaini Abdullahi (rtd), and Hajiya Maimunatu Abdullahi from Doma LGA, Nasarawa State, Nigeria. Dr Abdullahi is a Lecturer in Operations and Supply Chain Management at Cardiff Metropolitan University, Wales, United Kingdom.  With a robust academic and research profile in Operational Research (OR), her work centres on developing innovative optimisation models and solution methods to tackle complex real-world challenges in scheduling, supply chains, logistics, and recommender systems. This research has resulted in high-impact publications and has extended into collaborative projects, such as a completed study conducted with colleagues from Cardiff School of Education and Social Policy, University of Bangor, and the Welsh Government, which examined the impact of the Pupils Development Grant on reducing student attainment gaps. Dr Abdullahi's academic journey began at the University of Portsmouth, where she earned an MSc in Logistics and Supply Chain Management (with distinction) and later a PhD in Operational Research. Her doctoral research focused on the development of smart approaches for designing sustainable and robust freight transportation routes. Following her PhD, she held postdoctoral and senior research positions at the University of Portsmouth, contributing to funded projects such as the DfT-funded Solent Future Transport Zone (FTZ) Mobility-as-a-Service project and the Interreg 2-Seas Smart Light Concepts (SLIC) project. In her current role at Cardiff Metropolitan University, Dr Abdullahi is deeply involved in both teaching and academic administration. She leads several modules across undergraduate and postgraduate programmes, serves as a personal tutor, and supervises MSc dissertations. Her teaching experience spans international logistics, contemporary operations management, and MBA-level supply chain management, ensuring her students receive both theoretical and practical insights into the field. Dr Abdullahi is also an active academic leader and mentor, having held roles such as Departmental Mentor and Postdoctoral Researchers Representative during her tenure at the University of Portsmouth. At Cardiff Metropolitan University, she contributes to academic citizenship as a School Representative on the Race Equality Charter Working Group and as a member of the Value Stream Flow Center. Her commitment to diversity and leadership is further demonstrated by her participation in prestigious programmes such as the Welsh Crucible and the UK Advance HE Diversifying Leadership Programme. Her scholarly activities are extensive, with numerous journal and conference publications addressing topics like sustainable vehicle routing, recommender systems in e-commerce, and multi-criteria decision-making in public lighting systems. Dr. Abdullahi's work is further complemented by her active involvement in research funding initiatives; she has received best research paper awards and nominations, as well as several funding awards in leadership and research. Beyond her academic and research achievements, Dr Abdullahi maintains active memberships in professional organisations such as the Chartered Institute of Logistics and Transport, the British Academy of Management, and the British Operational Research Society.")
     },
@@ -251,7 +251,7 @@ export const BoardOfTrusteesMembers = [
         name: "Dr. Nkem Okeke",
         role: "MEMBER",
         member: "Board of Trustees",
-        image: "/images/board-of-trustees/nkem-okeke.jpg",
+        image: "/images/board-of-trustees/nkem-okeke.webp",
         slug: "nkem-okeke",
         info: formatMultiLineString(`His Excellency, Dr. Nkemakonam Chukwukaodinaka Okeke was born in Zaira on January 13, 1960 to the family of late Chief Richard Nwachukwu Okeke and Chief Mrs. Dorothy Nwakaego Okeke of Umuezu Awovu Village, Enugwu-Ukwu in Anambra State.
         He attended Denis Memorial Grammar School (DMGS) Onitsha and St. Finbarr's College Akoka, Lagos and later got admission to University of Wisconsin, Madison USA in 1978, where he graduated with a Bachelor of Science (B.Sc.) degree in Civil and Environmental Engineering in 1981.
@@ -272,7 +272,7 @@ export const BoardOfTrusteesMembers = [
         name: "Dr Oluyemisi Yetunde Olukoya",
         role: "MEMBER",
         member: "Board of Trustees",
-        image: "/images/board-of-trustees/vicky-sylvester.jpg",
+        image: "/images/board-of-trustees/vicky-sylvester.webp",
         slug: "vicky-sylvester-2",
         info: formatMultiLineString(`Dr (Mrs) Oluyemisi Yetunde Olukoya is a seasoned Agricultural Economist and Development Finance specialist of over three decades.  She is currently interested socio-economic issues, particularly poverty alleviation, economic empowerment  and capacity building. 
 

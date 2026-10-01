@@ -13,7 +13,7 @@ export default function YellowButton({
   variant = 'primary', 
   className = '' 
 }: YellowButtonProps) {
-  const baseStyles = "font-bold !px-[70px] !py-[20px] rounded-[4px] transition-all duration-300 transform hover:cursor-pointer hover:scale-[1.02] hover:shadow-lg";
+  const baseStyles = "font-bold !px-[4.375rem] !py-[1.25rem] rounded-[4px] transition-all duration-300 transform hover:cursor-pointer hover:scale-[1.02] hover:shadow-lg";
   
   const variants = {
     primary: {
@@ -30,7 +30,7 @@ export default function YellowButton({
       }
     },
     tertiary: {
-      className: "text-[#232427] bg-transparent leading-[16px] font-extrabold border-b-[2px] border-[#232427]",
+      className: "text-[#232427] bg-transparent leading-[1rem] font-extrabold border-b-[2px] border-[#232427]",
       style: {
         boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)'
       }
