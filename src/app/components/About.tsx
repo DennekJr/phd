@@ -60,8 +60,8 @@ export default function About() {
           </h2>
         </div>
 
-        {/* Top Grid: Images & Core Ideals (Mission, Vision, Aspiration, Motto, Goal) */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
+        {/* Top Grid: Images & Core Ideals */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
           
           {/* Images Grid */}
           <div className="relative order-1">
@@ -135,10 +135,13 @@ export default function About() {
 
         </div>
 
-        {/* Bottom Section: Dedicated Core Objectives Section */}
-        <div className="mt-20 pt-16 border-t border-gray-200">
+        {/* Bottom Section: Dedicated Core Objectives Section with clean spacing */}
+        <div className="mt-24 pt-16 border-t border-gray-200">
           <div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-[#222121] mb-10 text-center">Our Core Objectives</h3>
+            {/* Added generous top padding and bottom margin to the header */}
+            <h3 className="text-2xl lg:text-3xl font-bold text-[#222121] !pt-4 !mb-12 text-center">
+              Our Core Objectives
+            </h3>
             <div className="grid md:grid-cols-2 gap-6 items-stretch">
               {objectives.map((obj, index) => (
                 <div key={index} className="bg-[#FBF7ED]/50 border border-gray-100 !p-6 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow h-full">
@@ -156,7 +159,7 @@ export default function About() {
 
       </div>
 
-      {/* Decorative Background Assets (Flag removed) */}
+      {/* Decorative Background Assets */}
       <div className='flex flex-col gap-[1.25rem]'>
         <Image src={'/images/about/branch.svg'} alt='Branch image' width={180} height={244} className='object-cover w-[11.25rem] h-[15.25rem] absolute top-[16.6875rem] right-0 lg:block hidden' />
         <Image src={'/images/about/flower.svg'} alt='Flower image' width={144} height={145} className='object-cover w-[4rem] lg:w-[9rem] h-[4.0625rem] lg:h-[9.0625rem] absolute top-[16.875rem] lg:top-[3.5625rem] left-[2.5rem] lg:left-0' />
