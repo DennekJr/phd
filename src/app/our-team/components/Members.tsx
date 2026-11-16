@@ -8,6 +8,7 @@ export default function Members() {
             description="Our dedicated members driving the vision and mission of the Association."
             members={RegularMembers}
             scribbleImage="/images/our-team/scribble.svg"
+            className='!pb-[9.375rem]'
         />
     );
 }
