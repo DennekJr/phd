@@ -11,17 +11,22 @@ export default function About() {
   const ideals = [
     {
       title: 'Our Mission',
-      description: 'To promote academic excellence for Nigerian females towards the socioeconomic development of Nigeria.',
+      description: 'To unite and empower Nigerian female PhD holders to advance academic excellence, research, mentorship, leadership and service for national development.',
+    },
+    {
+      title: 'Our Vision',
+      description: 'To be Nigeria’s foremost network of female scholars, advancing knowledge, leadership and transformative impact for a better nation.',
     },
     {
       title: 'Our Motto',
-      description: 'Academic Excellence',
+      description: 'Knowledge • Excellence • Leadership • Service',
     },
     {
       title: 'Our Goal',
-      description: 'Awarding Female Academic Excellence',
+      description: 'To promote, recognise and harness female academic excellence, scholarship and leadership for Nigeria’s socioeconomic development.',
     }
   ]
+
   return (
     <section id="about" className="relative scroll-mt-[7rem] !bg-[#ffffff] !px-[1.25rem] md:!px-[4.6875rem] !py-[3.125rem] lg:!py-[7.9375rem]">
       <div className="relative mx-auto">
@@ -29,11 +34,11 @@ export default function About() {
         <div className="mb-8 lg:mb-16 lg:hidden">
           <div className="inline-block">
             <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-[#EFB025] font-bold !text-[1.25rem] md:!text-[1.5rem] !leading-[100%] !tracking-[0%]">
-              About
+              About Us
             </span>
           </div>
 
-          <h2 className="font-bold whitespace-nowrap max-w-[44.3125rem] !text-[1.875rem] md:!text-[2.25rem] xl:!text-[3rem] !leading-[100%] !tracking-[0%] text-[#222121] md:!mt-[0.625rem] !mb-[1.625rem]">
+          <h2 className="font-bold max-w-[44.3125rem] !text-[1.875rem] md:!text-[2.25rem] xl:!text-[3rem] !leading-[100%] !tracking-[0%] text-[#222121] md:!mt-[0.625rem] !mb-[1.625rem]">
             Fostering<br />
             Academic Excellence & <br />
             Socioeconomic Growth.
@@ -84,11 +89,11 @@ export default function About() {
             <div className="hidden lg:block">
               <div className="inline-block">
                 <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-[#EFB025] font-bold !text-[1.25rem] md:!text-[1.5rem] !leading-[100%] !tracking-[0%]">
-                  About
+                  About Us
                 </span>
               </div>
 
-              <h2 className="font-bold whitespace-nowrap max-w-[44.3125rem] !text-[1.875rem] md:!text-[2.25rem] xl:!text-[3rem] !leading-[100%] !tracking-[0%] text-[#222121] md:!mt-[0.625rem] !mb-[1.625rem]">
+              <h2 className="font-bold max-w-[44.3125rem] !text-[1.875rem] md:!text-[2.25rem] xl:!text-[3rem] !leading-[100%] !tracking-[0%] text-[#222121] md:!mt-[0.625rem] !mb-[1.625rem]">
                 Fostering<br />
                 Academic Excellence & <br />
                 Socioeconomic Growth.
@@ -105,7 +110,7 @@ export default function About() {
                         <Image src={'/images/about/red-checkmark.svg'} className='lg:w-[1rem] w-[0.75rem] lg:h-[1.25rem] h-[0.875rem]' width={16} height={20} alt='Red checkmark' />
                       </div>
                       <div className='flex'>
-                        <p className="text-[#222121] font-light !text-[1rem] lg:!text-[1.5rem] !leading-[100%] !tracking-[0%]">
+                        <p className="text-[#222121] font-light !text-[1rem] lg:!text-[1.25xl] xl:!text-[1.35rem] !leading-[1.5rem] !tracking-[0%]">
                           <span className='font-medium'>{item.title}:</span> {item.description}
                         </p>
                       </div>
@@ -124,4 +129,4 @@ export default function About() {
       </div>
     </section>
   );
-} 
+}
