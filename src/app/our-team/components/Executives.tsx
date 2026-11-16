@@ -9,7 +9,6 @@ export default function Executives() {
                 description="The executive members are the engine of the association, doing all the implementation tasks in various capacities. "
                 members={ExecutiveTrustees}
                 scribbleImage="/images/our-team/scribble.svg"
-                className='!pb-[9.375rem]'
             />
     );
 } 
