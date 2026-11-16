@@ -56,8 +56,8 @@ export default function About() {
           </h2>
         </div>
 
-        {/* Top Grid: Images & Core Ideals (Mission, Vision, Motto, Goal) */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        {/* Top Grid: Images & Core Ideals */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           
           {/* Images Grid */}
           <div className="relative order-1">
@@ -109,16 +109,16 @@ export default function About() {
               </h2>
             </div>
 
-            <div className="!space-y-[0.875rem] lg:!space-y-[1.25rem]">
+            <div className="!space-y-[1rem] lg:!space-y-[1.25rem]">
               {coreIdeals.map((item, i) => (
                 <div key={i} className="group relative">
                   <div className="relative border border-white/10 transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-start !gap-[1rem] lg:!gap-4">
-                      <div className="flex-shrink-0 w-[1rem] h-[1.25rem] flex items-center justify-center">
+                      <div className="flex-shrink-0 w-[1rem] h-[1.25rem] flex items-center justify-center mt-1">
                         <Image src={'/images/about/red-checkmark.svg'} className='lg:w-[1rem] w-[0.75rem] lg:h-[1.25rem] h-[0.875rem]' width={16} height={20} alt='Red checkmark' />
                       </div>
                       <div className='flex'>
-                        <p className="text-[#222121] font-light !text-[1rem] lg:!text-[1.25rem] xl:!text-[1.35rem] !leading-[1.5rem]">
+                        <p className="text-[#222121] font-light !text-[1rem] lg:!text-[1.15rem] xl:!text-[1.25rem] !leading-[1.6rem]">
                           <span className='font-medium'>{item.title}:</span> {item.description}
                         </p>
                       </div>
@@ -131,21 +131,21 @@ export default function About() {
 
         </div>
 
-        {/* Bottom Section: Aspiration & Objectives Grid */}
-        <div className="mt-16 pt-16 border-t border-gray-200">
+        {/* Bottom Section: Aspiration & Objectives Grid with Clean Spacing */}
+        <div className="mt-20 pt-16 border-t border-gray-200">
           
           {/* Aspiration Banner */}
-          <div className="bg-[#FBF7ED] !p-8 rounded-2xl mb-12 text-center max-w-3xl mx-auto border border-[#EFB025]/20 shadow-sm">
+          <div className="bg-[#FBF7ED] !p-8 rounded-2xl mb-16 text-center max-w-3xl mx-auto border border-[#EFB025]/20 shadow-sm">
             <h3 className="text-[#EFB025] font-bold text-xl uppercase tracking-wider mb-2">Our Aspiration</h3>
             <p className="text-[#222121] font-semibold text-2xl">A Better Nigeria</p>
           </div>
 
-          {/* Objectives Grid */}
+          {/* Objectives Grid with equal height items */}
           <div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-[#222121] mb-8 text-center">Our Core Objectives</h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            <h3 className="text-2xl lg:text-3xl font-bold text-[#222121] mb-10 text-center">Our Core Objectives</h3>
+            <div className="grid md:grid-cols-2 gap-6 items-stretch">
               {objectives.map((obj, index) => (
-                <div key={index} className="bg-[#FBF7ED]/50 border border-gray-100 !p-6 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow">
+                <div key={index} className="bg-[#FBF7ED]/50 border border-gray-100 !p-6 rounded-xl flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow h-full">
                   <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#EFB025]/20 text-[#AD0000] font-bold text-sm">
                     {index + 1}
                   </span>
@@ -164,7 +164,7 @@ export default function About() {
       {/* Decorative Background Assets */}
       <div className='flex flex-col gap-[1.25rem]'>
         <Image src={'/images/about/branch.svg'} alt='Branch image' width={180} height={244} className='object-cover w-[11.25rem] h-[15.25rem] absolute top-[16.6875rem] right-0 lg:block hidden' />
-        <Image src={'/images/about/flag.svg'} alt='Flag image' width={144} height={148} className='object-cover w-[4.0625rem] lg:w-[9rem] h-[4.125rem] lg:h-[9.25rem] absolute bottom-[40rem] lg:bottom-[28rem] right-[3.75rem] lg:right-[45.25rem]' />
+        <Image src={'/images/about/flag.svg'} alt='Flag image' width={144} height={148} className='object-cover w-[4.0625rem] lg:w-[9rem] h-[4.125rem] lg:h-[9.25rem] absolute bottom-[35rem] lg:bottom-[24rem] right-[3.75rem] lg:right-[45.25rem]' />
         <Image src={'/images/about/flower.svg'} alt='Flower image' width={144} height={145} className='object-cover w-[4rem] lg:w-[9rem] h-[4.0625rem] lg:h-[9.0625rem] absolute top-[16.875rem] lg:top-[3.5625rem] left-[2.5rem] lg:left-0' />
       </div>
     </section>
