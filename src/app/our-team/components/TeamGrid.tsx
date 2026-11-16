@@ -18,7 +18,7 @@ interface TeamGridProps {
     className?: string;
 }
 
-export default function TeamGrid({ title, description, members, scribbleImage, className }: TeamGridProps) {
+export default function TeamGrid({ title, description, members, scribbleImage = "/images/our-team/scribble.svg", className = "" }: TeamGridProps) {
     return (
         <section className={`relative w-full bg-[#FBF7ED] !pt-[7rem] !px-[1.25rem] lg:!px-[3.75rem] xl:!px-[12.5rem] ${className}`}>
             <div className="max-w-[78.125rem] !mx-auto">
