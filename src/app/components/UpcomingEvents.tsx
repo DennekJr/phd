@@ -84,7 +84,7 @@ const events: EventItem[] = [
 5. First-Degree Scholarship Recipients:
 - Blessing Onuoha
 - Judith Andrew`,
-        image: '/images/upcoming-events/inauguration.webp'
+        image: '/images/upcoming-events/inauguration.jpeg'
     }
 ];
 
